@@ -19,12 +19,20 @@ public class RouletteScript : MonoBehaviour
         //클릭 시 회전 속도를 설정하는 스크립트
         if(Input.GetMouseButtonDown(0))
         {
-            this.rSpeed = 10f;
+            this.rSpeed = 5f;
+        }
+        if(Input.GetMouseButtonDown(1))
+        {
+            this.rSpeed = 0.96f;
+        }
+        if(Input.GetMouseButtonDown(2))
+        {
+            this.rSpeed = 3f;
         }
         //회전 속도만큼 룰렛 회전
         transform.Rotate(0, 0, this.rSpeed);
 
         //룰렛 감속
-        this.rSpeed *= 0.96f;
+        //this.rSpeed *= 0.96f;
     }
 }
