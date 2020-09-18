@@ -60,8 +60,9 @@
     <Compile Include="Assets\EnemyManager.cs" />
     <Compile Include="Assets\PlayerScript\Bullet.cs" />
     <Compile Include="Assets\PortalScript\Portal.cs" />
-    <Compile Include="Assets\PlayerScript\PlayerMove.cs" />
     <Compile Include="Assets\TrapScript\Trap.cs" />
+    <Compile Include="Assets\PlayerScript\PlayerMove.cs" />
+    <Compile Include="Assets\TrapScript\FloorTrap.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

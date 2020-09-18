@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Trap : MonoBehaviour
 {
-    GameObject trap;
+    GameObject[] trap;
     Transform tTrap;
     WalkingScript player;
-    public float dropSpeed = 1f;
+    public float dropSpeed = 6f;
+    float playerTrapDistance = 1.3f;
     // Start is called before the first frame update
     private void OnTriggerEnter2D(Collider2D col)
     {
@@ -19,18 +20,33 @@ public class Trap : MonoBehaviour
     }
     void Start()
     {
-        trap = GameObject.FindGameObjectWithTag("Trap");
+        trap = GameObject.FindGameObjectsWithTag("Trap");
         player = GameObject.Find("Player").GetComponent<WalkingScript>();
-        tTrap = trap.GetComponent<Transform>();
+        //tTrap = trap.GetComponent<Transform>();
     }
 
     // Update is called once per frame
     void Update()
     {
-            if (tTrap.transform.position.x - player.transform.position.x < 1f)
+        for (int i = 0; i < trap.Length; i++)
+        {
+            if (trap[i].transform.position.x - player.transform.position.x < playerTrapDistance)
             {
-                tTrap.transform.Translate(Vector2.down * dropSpeed * Time.deltaTime);
+                trap[i].transform.Translate(Vector2.down * dropSpeed * Time.deltaTime);
+                playerTrapDistance = 2f;
             }
+            
+
+        }
+        for(int i = 0; i < trap.Length; i ++)
+        {
+            if (trap[i].transform.position.y < -50f)
+            {
+                Destroy(trap[i]);
+            }
+        }
+        
     }
+    
     
 }

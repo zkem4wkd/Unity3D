@@ -8,7 +8,6 @@ public class WalkingScript : MonoBehaviour
     public Rigidbody2D player;
     GameObject Ground;
     public int JumpCount;
-    bool playerG = true;
     public float pSpeed = 5f;
     // Start is called before the first frame update
     void Start()
