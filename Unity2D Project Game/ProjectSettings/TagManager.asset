@@ -8,6 +8,7 @@ TagManager:
   - Portal
   - Trap
   - FloorTrap
+  - Needle
   layers:
   - Default
   - TransparentFX
