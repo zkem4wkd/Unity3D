@@ -6,16 +6,24 @@ public class Bullet : MonoBehaviour
 {
     public Transform playerPosition;
     Transform bulletPosition;
-
-    public float bulletSpeed = 10f;
+    WalkingScript key;
+    public float bulletSpeed = 5f;
+    WalkingScript pos;
 
     Vector2 startPosition; // 총알이 생성되었을 때의 최초 위치값
+    Vector2 dir;
     // Start is called before the first frame update
     void Start()
     {
+        key = GameObject.Find("Player").GetComponent<WalkingScript>();
+        pos = GameObject.Find("pos").GetComponent<WalkingScript>();
+
+        playerPosition = GameObject.Find("Player").GetComponent<Transform>();
+
         bulletPosition = gameObject.GetComponent<Transform>();
 
         bulletPosition.transform.position = playerPosition.position;
+
 
         startPosition = playerPosition.position;
     }
@@ -23,10 +31,15 @@ public class Bullet : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-        bulletPosition.transform.Translate(Vector2.up * bulletSpeed * Time.deltaTime);
+        key.key = 1;
+        if (key.key != 1)
+        {
+            bulletPosition.transform.Translate(Vector2.right * (key.key*bulletSpeed) * Time.deltaTime);
 
-        if(startPosition.y + 10f < bulletPosition.position.y)
+        }
+        
+
+        if (startPosition.x + 3f < bulletPosition.position.x)
         {
             Destroy(gameObject);
         }

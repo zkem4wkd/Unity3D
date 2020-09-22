@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
-    GameObject monster;
     public float Speed = 5.0f;
     // Start is called before the first frame update
     void Start()
     {
-        monster = GameObject.FindGameObjectWithTag("Monster");
     }
     
 

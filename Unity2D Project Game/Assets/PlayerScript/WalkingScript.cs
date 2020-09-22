@@ -9,6 +9,10 @@ public class WalkingScript : MonoBehaviour
     GameObject Ground;
     public int JumpCount;
     public float pSpeed = 5f;
+    public int key = 0;
+    public GameObject bullet;
+
+    public Transform pos;
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +25,7 @@ public class WalkingScript : MonoBehaviour
     void Update()
     {
         Ground = GameObject.FindGameObjectWithTag("Ground");
-        
+
         //playerWalking.SetBool("walking", false);
 
         //if (Input.GetKeyDown(KeyCode.LeftArrow))
@@ -34,13 +38,20 @@ public class WalkingScript : MonoBehaviour
         //}
         if (Input.GetKey(KeyCode.RightArrow))
         {
+            key = 1;
             player.transform.Translate(Vector2.right * pSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.LeftArrow))
         {
+            key = -1;
             player.transform.Translate(Vector2.left * pSpeed * Time.deltaTime);
         }
-        if (JumpCount < 2)
+        if (key != 0)
+            {
+                transform.localScale = new Vector3(key, 1, 1);
+            }
+
+            if (JumpCount < 2)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -50,6 +61,10 @@ public class WalkingScript : MonoBehaviour
             
         }
 
+        if(Input.GetKeyDown("z"))
+        {
+            Instantiate(bullet, pos.position, Quaternion.identity);
+        }
     }
     void OnCollisionEnter2D(Collision2D col)
     {

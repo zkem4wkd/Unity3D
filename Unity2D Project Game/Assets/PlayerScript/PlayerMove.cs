@@ -37,6 +37,9 @@ public class PlayerMove : MonoBehaviour
         {
             Player.transform.Translate(Vector2.right * playerSpeed * Time.deltaTime);
         }
+
+
+
         if (playerG > 0.8f)
         {
             SetJump = true;
