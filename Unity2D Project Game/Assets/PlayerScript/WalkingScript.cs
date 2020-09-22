@@ -9,6 +9,7 @@ public class WalkingScript : MonoBehaviour
     GameObject Ground;
     public int JumpCount;
     public float pSpeed = 5f;
+
     // Start is called before the first frame update
     void Start()
     {
