@@ -4,11 +4,22 @@ using UnityEngine;
 
 public class MonsterBullet : MonoBehaviour
 {
+    GameDirector director;
     public float Speed = 4.0f;
+    Player player;
     // Start is called before the first frame update
     void Start()
     {
-        
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            director = GameObject.Find("GameDirector").GetComponent<GameDirector>();
+            director.live = false;
+        }
     }
 
     // Update is called once per frame

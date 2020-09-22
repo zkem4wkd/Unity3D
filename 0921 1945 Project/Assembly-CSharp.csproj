@@ -55,12 +55,13 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\BackGround.cs" />
     <Compile Include="Assets\Script\Player.cs" />
-    <Compile Include="Assets\Script\PlayerBullet.cs" />
-    <Compile Include="Assets\Script\MonsterScript.cs" />
-    <Compile Include="Assets\Script\MonsterBullet.cs" />
     <Compile Include="Assets\Script\GameDirector.cs" />
+    <Compile Include="Assets\Script\MonsterScript.cs" />
+    <Compile Include="Assets\Script\PlayerBullet.cs" />
+    <Compile Include="Assets\Script\BackGround.cs" />
+    <Compile Include="Assets\Script\MonsterBullet.cs" />
+    <Compile Include="Assets\Script\Homing.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

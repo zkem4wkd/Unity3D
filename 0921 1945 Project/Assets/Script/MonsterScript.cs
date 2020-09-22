@@ -26,9 +26,11 @@ public class MonsterScript : MonoBehaviour
         if (collision.gameObject.tag == "Bullet")
         {
             Destroy(gameObject);
-            Destroy(Bullet.gameObject);
+            Destroy(collision.gameObject);
         }
     }
+
+    
     void CreateBullet()
     {
         Instantiate(Bullet, pos.position, Quaternion.identity);
