@@ -9,6 +9,7 @@ TagManager:
   - Trap
   - FloorTrap
   - Needle
+  - Cannon
   layers:
   - Default
   - TransparentFX

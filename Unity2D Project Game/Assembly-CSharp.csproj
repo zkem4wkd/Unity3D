@@ -63,6 +63,9 @@
     <Compile Include="Assets\TrapScript\Trap.cs" />
     <Compile Include="Assets\PlayerScript\PlayerMove.cs" />
     <Compile Include="Assets\PortalScript\Portal1.cs" />
+    <Compile Include="Assets\BossScript\Background.cs" />
+    <Compile Include="Assets\BossScript\BossScript.cs" />
+    <Compile Include="Assets\BossScript\CannonScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

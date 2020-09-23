@@ -63,7 +63,7 @@ public class WalkingScript : MonoBehaviour
 
         if(Input.GetKeyDown("z"))
         {
-            Instantiate(bullet, pos.position, Quaternion.identity);
+            Instantiate(bullet, pos.position, transform.rotation);
         }
     }
     void OnCollisionEnter2D(Collision2D col)
