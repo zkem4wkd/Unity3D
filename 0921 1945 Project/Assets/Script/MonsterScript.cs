@@ -27,6 +27,7 @@ public class MonsterScript : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(collision.gameObject);
+            
         }
     }
 

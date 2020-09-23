@@ -6,8 +6,9 @@ using UnityEngine.UI;
 public class GameDirector : MonoBehaviour
 {
     public GameObject monster;
+    public GameObject monster2;
     public float encount = 2f;
-    public float StartTime = 1;
+    public float StartTime = 3;
     public float SpawnStop = 10;
     PlayerBullet pBullet;
     public GameObject gPlayer;
@@ -16,6 +17,7 @@ public class GameDirector : MonoBehaviour
     public int Hp = 2;
     public Text text;
     bool swi = true;
+    bool swi2 = true;
   
 
     // Start is called before the first frame update
@@ -23,6 +25,12 @@ public class GameDirector : MonoBehaviour
     {
         StartCoroutine("RandomSpawn");
         
+    }
+    void Stop()
+    {
+       swi = false;
+       StartCoroutine("RandomSpawn2");
+       
     }
 
     IEnumerator RandomSpawn()
@@ -35,6 +43,18 @@ public class GameDirector : MonoBehaviour
             yield return new WaitForSeconds(StartTime);
             Vector2 r = new Vector2(randomX, transform.position.y);
             Instantiate(monster, r, Quaternion.identity);
+        }
+    }
+    IEnumerator RandomSpawn2()
+    {
+
+
+        while (swi2)
+        {
+            float randomX = Random.Range(-5.6f, 5.6f);
+            yield return new WaitForSeconds(StartTime);
+            Vector2 r = new Vector2(randomX, transform.position.y);
+            Instantiate(monster2, r, Quaternion.identity);
         }
     }
 

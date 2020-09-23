@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5396946547749097985}
   - component: {fileID: 5396946547749097986}
   - component: {fileID: 5396946547749097991}
+  - component: {fileID: 1098487141}
   m_Layer: 0
   m_Name: Homing
   m_TagString: Untagged
@@ -115,4 +116,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60d7a5286a414845a47b3b4f44151b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 569135396224807410, guid: ae052d88b0c78454d9813a33e72be81c, type: 3}
+--- !u!58 &1098487141
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5396946547749097987}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.45870695

@@ -8,11 +8,12 @@ public class Player : MonoBehaviour
     public float moveSpeed = 5;
     public GameObject bullet;
     public Transform pos;
-
+    AudioSource missile;
     // Start is called before the first frame update
     void Start()
     {
         ani = GetComponent<Animator>();
+        missile = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bullet, pos.position, Quaternion.identity);
+            missile.Play();
         }
 
 

@@ -4,13 +4,26 @@ using UnityEngine;
 
 public class Homing : MonoBehaviour
 {
-    public GameObject target;
+
+    GameDirector director;
+    GameObject target;
     Vector2 dir; //벡터의 방향을 구할 변수
     Vector2 dirNo; // 벡터의 normarlize 정규화 단위벡터
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag=="Player")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+            director = GameObject.Find("GameDirector").GetComponent<GameDirector>();
+            director.live = false;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
+        target = GameObject.FindGameObjectWithTag("Player");
         //유도 1단계 한번만 방향구하고 그 방향으로 날라가기
         dir = target.transform.position - transform.position;
 
@@ -21,5 +34,9 @@ public class Homing : MonoBehaviour
     void Update()
     {
         transform.Translate(dirNo * 3f * Time.deltaTime);
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
     }
 }
