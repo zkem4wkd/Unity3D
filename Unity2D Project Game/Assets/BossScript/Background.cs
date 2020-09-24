@@ -11,13 +11,18 @@ public class Background : MonoBehaviour
         Color = GetComponent<SpriteRenderer>();
         StartCoroutine("FadeIn");
     }
-    IEnumerable FadeIn()
+    IEnumerator FadeIn()
     {
-        for (float i= 1 ;i > 0.0f ;i -= 0.1f)
-        {
-            Color.color = new Color(0,0,0,i);
-        }
         yield return new WaitForSeconds(1f);
+        for (float i= 1 ;i > 0.0f; )
+        {
+            Color.color = new Color(255,255,255,i);
+
+            yield return new WaitForSeconds(0.2f);
+            i -= 0.1f;
+
+        }
+        
 
     }
 

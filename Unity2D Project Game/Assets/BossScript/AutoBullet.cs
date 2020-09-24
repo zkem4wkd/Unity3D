@@ -1,0 +1,39 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class AutoBullet : MonoBehaviour
+{
+    // Start is called before the first frame update
+    GameObject target;
+    Vector2 dir; //벡터의 방향을 구할 변수
+    Vector2 dirNo; // 벡터의 normarlize 정규화 단위벡터
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            Destroy(gameObject);
+            Destroy(collision.gameObject);
+        }
+    }
+    // Start is called before the first frame update
+    void Start()
+    {
+        target = GameObject.FindGameObjectWithTag("Player");
+        //유도 1단계 한번만 방향구하고 그 방향으로 날라가기
+        dir = target.transform.position - transform.position;
+
+        dirNo = dir.normalized; // 방향이 1인 벡터로 만듬
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        transform.Translate(dirNo * 3f * Time.deltaTime);
+    }
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+}

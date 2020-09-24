@@ -10,6 +10,10 @@ TagManager:
   - FloorTrap
   - Needle
   - Cannon
+  - uCannon
+  - Wall
+  - Thunder
+  - LaserPoint
   layers:
   - Default
   - TransparentFX

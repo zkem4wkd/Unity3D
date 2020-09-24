@@ -59,13 +59,18 @@
     <Compile Include="Assets\TrapScript\Needel.cs" />
     <Compile Include="Assets\TrapScript\FloorTrap.cs" />
     <Compile Include="Assets\PlayerScript\Bullet.cs" />
-    <Compile Include="Assets\PortalScript\Portal.cs" />
-    <Compile Include="Assets\TrapScript\Trap.cs" />
-    <Compile Include="Assets\PlayerScript\PlayerMove.cs" />
-    <Compile Include="Assets\PortalScript\Portal1.cs" />
-    <Compile Include="Assets\BossScript\Background.cs" />
     <Compile Include="Assets\BossScript\BossScript.cs" />
     <Compile Include="Assets\BossScript\CannonScript.cs" />
+    <Compile Include="Assets\PortalScript\Portal.cs" />
+    <Compile Include="Assets\TrapScript\Trap.cs" />
+    <Compile Include="Assets\BossScript\Background.cs" />
+    <Compile Include="Assets\PlayerScript\PlayerMove.cs" />
+    <Compile Include="Assets\PortalScript\Portal1.cs" />
+    <Compile Include="Assets\TrapScript\Neddle2.cs" />
+    <Compile Include="Assets\BossScript\AutoBullet.cs" />
+    <Compile Include="Assets\TrapScript\TriggerScript.cs" />
+    <Compile Include="Assets\PlayerScript\GameDirector.cs" />
+    <Compile Include="Assets\BossScript\Thunder.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

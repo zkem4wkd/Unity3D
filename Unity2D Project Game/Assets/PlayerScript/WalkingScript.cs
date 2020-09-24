@@ -52,7 +52,7 @@ public class WalkingScript : MonoBehaviour
             }
 
             if (JumpCount < 2)
-        {
+            {
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 player.AddForce(Vector2.up * 6f, ForceMode2D.Impulse);
