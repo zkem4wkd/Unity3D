@@ -6,42 +6,92 @@ using UnityEngine.UI;
 
 public class BossScript : MonoBehaviour
 {
+    GameDirector gameDirector;
+
+    public GameObject explosion;
     public GameObject Cannon;
     public GameObject Niddle;
     public GameObject autoBullet;
     public GameObject thunder;
+    public GameObject Wall;
     GameObject hpGauge;
     float delta = 0.0f;
     public float timeTrigger = 0.5f;
     float cannonY = 5f;
 
+    SpriteRenderer boss;
+    IEnumerator cour;
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if(collision.gameObject.tag=="uCannon")
         {
-            hpGauge = GameObject.Find("BossHp");
             hpGauge.GetComponent<Image>().fillAmount -= 0.05f;
             Destroy(collision.gameObject);
         }
+        if(collision.gameObject.tag=="Bullet")
+        {
+            boss.color = new Color(255, 255, 255, 0.5f);
+            StartCoroutine(FadeIn());
+        }
+    }
+    
+    
+    IEnumerator FadeIn()
+    {
+        yield return new WaitForSeconds(0.1f);
+        boss.color = new Color(255, 255, 255, 1);
     }
     // Start is called before the first frame update
     void Start()
     {
+        hpGauge = GameObject.Find("BossHp");
+        gameDirector = GameObject.Find("BossHp").GetComponent<GameDirector>();
 
+        boss = GameObject.Find("Boss").GetComponent<SpriteRenderer>();
+    }
+    private void OnEnable()
+    {
         StartCoroutine("Pattern1");
     }
+    private void OnDisable()
+    {
+        StopAllCoroutines();
 
-
+    }
     // Update is called once per frame
     void Update()
     {
         delta += Time.deltaTime;
-        print(delta);
         if (transform.position.y < -0.8)
         {
             transform.Translate(Vector2.up * 5f * Time.deltaTime);
         }
-        
+
+        if (
+        hpGauge.GetComponent<Image>().fillAmount <= 0)
+        {
+            cour = bossClear();
+            StartCoroutine(cour);
+            delta += Time.deltaTime;
+        }
+    }
+    IEnumerator bossClear()
+    {
+        Explosion();
+        yield return new WaitForSeconds(5f);
+        Destroy(this.gameObject);
+        Destroy(Wall.gameObject);
+    }
+    void Explosion()
+    {
+        float exX = Random.Range(3f, 7f);
+        float exY = Random.Range(-4.6f, 2.5f);
+        Instantiate(explosion, new Vector2(exX, exY), Quaternion.identity);
+        if (delta > 5)
+        {
+            return;
+        }
     }
     IEnumerator Pattern1()
     {
@@ -83,7 +133,10 @@ public class BossScript : MonoBehaviour
             Destroy(thunder);
         }
         Destroy(thunder);
-        yield return 0;
+        if(delta > 40f)
+        {
+            delta = 0;
+        }
     }
 
 }

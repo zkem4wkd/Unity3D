@@ -5,6 +5,7 @@ using UnityEngine;
 public class WalkingScript : MonoBehaviour
 {
     Animator playerWalking;
+    GameObject gameOver;
     public Rigidbody2D player;
     GameObject Ground;
     public int JumpCount;
@@ -14,11 +15,21 @@ public class WalkingScript : MonoBehaviour
 
     public Transform pos;
 
+    private void OnDisable()
+    {
+        gameOver.GetComponent<SpriteRenderer>().color = new Vector4(255, 255, 255, 255);
+    }
+    private void OnEnable()
+    {
+        Destroy(gameOver.gameObject);
+    }
     // Start is called before the first frame update
     void Start()
     {
         playerWalking = GetComponent<Animator>();
         JumpCount = 0;
+        gameOver = GameObject.Find("GameOver");
+        
     }
 
     // Update is called once per frame
@@ -61,7 +72,7 @@ public class WalkingScript : MonoBehaviour
             
         }
 
-        if(Input.GetKeyDown("z"))
+        if(Input.GetKeyDown("z") || Input.GetKeyDown("ㅋ"))
         {
             Instantiate(bullet, pos.position, transform.rotation);
         }

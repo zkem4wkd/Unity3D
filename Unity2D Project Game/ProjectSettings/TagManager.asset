@@ -14,6 +14,8 @@ TagManager:
   - Wall
   - Thunder
   - LaserPoint
+  - Explosion
+  - Bullet
   layers:
   - Default
   - TransparentFX
