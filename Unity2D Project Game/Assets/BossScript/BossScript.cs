@@ -15,7 +15,7 @@ public class BossScript : MonoBehaviour
     public GameObject thunder;
     public GameObject Wall;
     GameObject hpGauge;
-    float delta = 0.0f;
+    public float delta = 0.0f;
     public float timeTrigger = 0.5f;
     float cannonY = 5f;
 
@@ -73,7 +73,7 @@ public class BossScript : MonoBehaviour
         {
             cour = bossClear();
             StartCoroutine(cour);
-            delta += Time.deltaTime;
+            delta = 60;
         }
     }
     IEnumerator bossClear()
@@ -88,10 +88,7 @@ public class BossScript : MonoBehaviour
         float exX = Random.Range(3f, 7f);
         float exY = Random.Range(-4.6f, 2.5f);
         Instantiate(explosion, new Vector2(exX, exY), Quaternion.identity);
-        if (delta > 5)
-        {
-            return;
-        }
+        
     }
     IEnumerator Pattern1()
     {
@@ -116,7 +113,7 @@ public class BossScript : MonoBehaviour
     }
     IEnumerator Pattern3()
     {
-        while (delta > 20f && delta <30f)
+        while (delta > 20f && delta <25f)
         {
             cannonY -= 2; 
             Instantiate(Cannon,new Vector2(4.65f,cannonY),Quaternion.identity);
@@ -126,16 +123,16 @@ public class BossScript : MonoBehaviour
     }
     IEnumerator Pattern4()
     {
-        while (delta > 30f && delta < 40f)
+        while (delta > 25f && delta < 35f)
         {
+            yield return new WaitForSeconds(0.3f);
             Instantiate(thunder);
             yield return new WaitForSeconds(1f);
-            Destroy(thunder);
         }
-        Destroy(thunder);
-        if(delta > 40f)
+        if(delta > 35f)
         {
             delta = 0;
+            cannonY = 5f;
         }
     }
 

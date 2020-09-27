@@ -23,13 +23,19 @@ public class Thunder : MonoBehaviour
         {
             float thunderX = Random.Range(-5.6f, 1.4f);
             Instantiate(laser.gameObject, new Vector3(thunderX, 0, 0), Quaternion.identity);
-            for (int i = 10; i >= 0; i--)
+            for (int i = 10; i >= -2; i--)
             {
-                Destroy(laser.gameObject);
+                if(i == 9)
+                {
+                    Destroy(laser.gameObject);
+                }
                 thunder.transform.position = new Vector3(thunderX, i, 0);
+                if(i == -2)
+                {
+                    Destroy(thunder.gameObject);
+                }
                 yield return new WaitForSeconds(0.08f);
             }
-            Destroy(thunder.gameObject);
             yield return new WaitForSeconds(1.5f);
         }
     }
@@ -45,6 +51,10 @@ public class Thunder : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             Destroy(collision.gameObject);
+        }
+        if(collision.gameObject.name == "Ground Collider")
+        {
+            Destroy(gameObject);
         }
     }
 }

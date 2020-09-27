@@ -18,10 +18,11 @@ public class WalkingScript : MonoBehaviour
     private void OnDisable()
     {
         gameOver.GetComponent<SpriteRenderer>().color = new Vector4(255, 255, 255, 255);
+        
     }
     private void OnEnable()
     {
-        Destroy(gameOver.gameObject);
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class WalkingScript : MonoBehaviour
         playerWalking = GetComponent<Animator>();
         JumpCount = 0;
         gameOver = GameObject.Find("GameOver");
-        
+
     }
 
     // Update is called once per frame
@@ -72,7 +73,7 @@ public class WalkingScript : MonoBehaviour
             
         }
 
-        if(Input.GetKeyDown("z") || Input.GetKeyDown("ㅋ"))
+        if(Input.GetKeyDown("z"))
         {
             Instantiate(bullet, pos.position, transform.rotation);
         }

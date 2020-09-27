@@ -10,7 +10,7 @@ public class Explosion : MonoBehaviour
     }
     IEnumerator destroy()
     { 
-        yield return new WaitForSeconds(0.18f);
+        yield return new WaitForSeconds(0.08f);
         Destroy(this.gameObject);
     }
     // Start is called before the first frame update

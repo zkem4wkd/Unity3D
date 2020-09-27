@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1235815793626045392}
   - component: {fileID: 1235815793626045393}
-  - component: {fileID: 1235815793626045395}
   m_Layer: 0
   m_Name: LaserPoint
   m_TagString: LaserPoint
@@ -25,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235815793626045398}
-  m_LocalRotation: {x: -0, y: -0, z: 0.12800433, w: 0.99177366}
+  m_LocalRotation: {x: 0, y: 0, z: 0.12800802, w: 0.9917732}
   m_LocalPosition: {x: -4.847839, y: 0, z: 0}
   m_LocalScale: {x: 1.4821105, y: 1.4821105, z: 1.4821105}
   m_Children: []
@@ -83,16 +82,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1235815793626045395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1235815793626045398}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b2dd510f7ef95949bf91fdadf5182b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laser: {fileID: 0}
