@@ -80,6 +80,9 @@ public class WalkingScript : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D col)
     {
-        JumpCount = 0;
+        if (col.gameObject.tag == "Ground")
+        {
+            JumpCount = 0;
+        }
     }
 }
