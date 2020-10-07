@@ -13,12 +13,13 @@ public class Monster : MonoBehaviour
     public Transform player;
     float delayTime;
 
-    Animator monAny;
+    public Animator monAny;
     float angle;
     // Start is called before the first frame update
     void Start()
     {
         mst = GetComponent<SpriteRenderer>();
+        monAny = GetComponent<Animator>();
         origin = mst.color;
         delayTime = Time.deltaTime;
     }
@@ -50,6 +51,30 @@ public class Monster : MonoBehaviour
             }
 
         }
+        if (player.position.y < transform.position.y - 0.5f)
+        {
+            monAny.SetFloat("y", -1);
+            monAny.SetFloat("x", 0);
+        }
+        else if (player.position.x < transform.position.x && player.position.y < transform.position.y + 0.3f)
+        {
+            monAny.SetFloat("x", -1);
+            monAny.SetFloat("y", 0);
+        }
+        else if (player.position.x > transform.position.x && player.position.y < transform.position.y + 0.3f)
+        {
+            monAny.SetFloat("x", 1);
+            monAny.SetFloat("y", 0);
+        }
+        else if (player.position.y > transform.position.y + 0.5f)
+        {
+            monAny.SetFloat("y", 1);
+            monAny.SetFloat("x", 0);
+        }
+        
+
+
+
     }
 
     private void OnCollisionEnter2D(Collision2D col)
