@@ -689,7 +689,16 @@
       <HintPath>D:/GitHub/Unity3D/1005 Unity2D Tile Map/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup></ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{139B7A43-A38A-F2E8-14BE-A6DCA3E26B18}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{6751F366-F926-C45F-DF8B-BA71638CA26D}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

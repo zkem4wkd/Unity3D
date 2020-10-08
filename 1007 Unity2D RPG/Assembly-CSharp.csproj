@@ -66,6 +66,9 @@
     <Compile Include="Assets\Script\Character.cs" />
     <Compile Include="Assets\Script\Fire.cs" />
     <Compile Include="Assets\Script\Monster.cs" />
+    <Compile Include="Assets\Script\Snake.cs" />
+    <Compile Include="Assets\Script\iceUp.cs" />
+    <Compile Include="Assets\Script\lightningScript.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -680,6 +683,12 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>D:/GitHub/Unity3D/1007 Unity2D RPG/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>D:/GitHub/Unity3D/1007 Unity2D RPG/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>D:/GitHub/Unity3D/1007 Unity2D RPG/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>

@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Monster : MonoBehaviour
 {
@@ -15,6 +16,11 @@ public class Monster : MonoBehaviour
 
     public Animator monAny;
     float angle;
+    Vector2 dir;
+
+    public Image monHp;
+    float currentHp = 50;
+    float monmaxHp = 50;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,30 +57,63 @@ public class Monster : MonoBehaviour
             }
 
         }
-        if (player.position.y < transform.position.y - 0.5f)
-        {
-            monAny.SetFloat("y", -1);
-            monAny.SetFloat("x", 0);
-        }
-        else if (player.position.x < transform.position.x && player.position.y < transform.position.y + 0.3f)
-        {
-            monAny.SetFloat("x", -1);
-            monAny.SetFloat("y", 0);
-        }
-        else if (player.position.x > transform.position.x && player.position.y < transform.position.y + 0.3f)
+        //if (player.position.y < transform.position.y - 0.5f)
+        //{
+        //    monAny.SetFloat("y", -1);
+        //    monAny.SetFloat("x", 0);
+        //}
+        //else if (player.position.x < transform.position.x && player.position.y < transform.position.y + 0.3f)
+        //{
+        //    monAny.SetFloat("x", -1);
+        //    monAny.SetFloat("y", 0);
+        //}
+        //else if (player.position.x > transform.position.x && player.position.y < transform.position.y + 0.3f)
+        //{
+        //    monAny.SetFloat("x", 1);
+        //    monAny.SetFloat("y", 0);
+        //}
+        //else if (player.position.y > transform.position.y + 0.5f)
+        //{
+        //    monAny.SetFloat("y", 1);
+        //    monAny.SetFloat("x", 0);
+        //}
+        Bland();
+
+
+    }
+
+    void Bland()
+    {
+        dir = player.position - transform.position;
+        monAny.SetFloat("x", dir.x);
+        monAny.SetFloat("y", dir.y);
+    }
+    void AngleAnimation()
+    {
+        dir = player.position - transform.position;
+
+        angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+
+        if(angle > -45 && angle <= 45)
         {
             monAny.SetFloat("x", 1);
             monAny.SetFloat("y", 0);
         }
-        else if (player.position.y > transform.position.y + 0.5f)
+        else if (angle > 45 && angle <= 135)
         {
-            monAny.SetFloat("y", 1);
             monAny.SetFloat("x", 0);
+            monAny.SetFloat("y", 1);
         }
-        
-
-
-
+        else if (angle > 135 && angle <= 180 || angle <=-135)
+        {
+            monAny.SetFloat("x", -1);
+            monAny.SetFloat("y", 0);
+        }
+        else if (angle > -135 && angle <= -45)
+        {
+            monAny.SetFloat("x", 0);
+            monAny.SetFloat("y", -1);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D col)
@@ -82,7 +121,20 @@ public class Monster : MonoBehaviour
         if(col.gameObject.tag=="Player")
         {
             damaged = true;
-            Debug.Log("crush");
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.tag == "PlayerSkill")
+        {
+            damaged = true;
+            float Damage = 1;
+            if(currentHp > 0)
+            {
+                currentHp -= Damage;
+                monHp.fillAmount = currentHp / monmaxHp;
+            }
+            Destroy(collision.gameObject);
         }
     }
 }

@@ -14,6 +14,7 @@ public class Character : MonoBehaviour
     bool isAttacking = false;
     Coroutine attackRoutine;
     public BoxCollider2D pBox;
+    public GameObject ice;
 
     public enum LayerName
     {
@@ -32,8 +33,9 @@ public class Character : MonoBehaviour
     {
         myRigid2D = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
+        ice = GetComponent<GameObject>();
         direction = Vector2.zero;
-        pBox.enabled = false;
+        //pBox.enabled = false;
     }
 
     void GetInput()
@@ -50,6 +52,7 @@ public class Character : MonoBehaviour
             if(!isAttacking)
             {
                 attackRoutine = StartCoroutine(Attack());
+                //Skill();
             }
         }
     }
@@ -69,7 +72,7 @@ public class Character : MonoBehaviour
             StopCoroutine(attackRoutine);
             isAttacking = false;
             myAnimator.SetBool("attack", isAttacking);
-            pBox.enabled = false;
+            //pBox.enabled = false;
         }
     }
 
@@ -105,6 +108,12 @@ public class Character : MonoBehaviour
             myAnimator.SetLayerWeight(1, 0);
         }
         myAnimator.SetLayerWeight((int)layerName, 1);
+    }
+
+    //스킬
+    void Skill()
+    {
+        Instantiate(ice, transform.position, Quaternion.identity);
     }
 
     private void FixedUpdate()
