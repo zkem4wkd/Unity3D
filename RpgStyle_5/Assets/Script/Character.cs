@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public class hpDecrease
+{
+
+}
 public class Character : MonoBehaviour
 {
     public Image Hp;
@@ -12,7 +16,19 @@ public class Character : MonoBehaviour
 
     private Animator myAnimator;
     private Rigidbody2D myrigid2D;
-    public int pHp = 100;
+    public int pHp;
+    public int hpDecrease
+    {
+        set {
+                pHp = value;
+                if(pHp <= 0)
+            {
+                Debug.Log("Die");
+            }
+            }
+        get { return pHp; }
+    }
+    
     //공격
     bool isAttacking = false;
     Coroutine attackRoutine;
@@ -28,6 +44,7 @@ public class Character : MonoBehaviour
         AttackLayer = 2
     }
 
+    
     //프로퍼티
     //x나 y값이 0이아니면 IsMoving =true 
     //움직이냐 아니냐를 체크하는 bool값
@@ -47,6 +64,7 @@ public class Character : MonoBehaviour
         myrigid2D = GetComponent<Rigidbody2D>();
         myAnimator = GetComponent<Animator>();
         direction = Vector2.zero;
+        pHp = 100;
     }
 
     void GetInput()
