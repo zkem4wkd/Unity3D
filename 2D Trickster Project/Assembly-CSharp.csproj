@@ -65,6 +65,9 @@
   <ItemGroup>
     <Compile Include="Assets\MonsterScript\Bird.cs" />
     <Compile Include="Assets\Script\MovingScript.cs" />
+    <Compile Include="Assets\Script\PlayerMoving.cs" />
+    <Compile Include="Assets\Script\RoadScript.cs" />
+    <Compile Include="Assets\Script\TileScript.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
