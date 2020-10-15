@@ -64,6 +64,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\MonsterScript\Bird.cs" />
+    <Compile Include="Assets\Script\Astar.cs" />
+    <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\MovingScript.cs" />
     <Compile Include="Assets\Script\PlayerMoving.cs" />
     <Compile Include="Assets\Script\RoadScript.cs" />

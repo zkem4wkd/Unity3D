@@ -9,16 +9,29 @@ public class TileScript : MonoBehaviour
     GameObject player;
     public bool roadOn = false;
     public Tilemap tile;
-    GameObject road;
-    RoadScript rScript;
+    public TilemapCollider2D[] roads = new TilemapCollider2D[5];
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (collision.gameObject.CompareTag("Player"))
         {
-            rScript.enabled = true;
+            for (int i = 0; i < roads.Length; i++)
+            {
+                roads[i].enabled = true;
+            }
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            for (int i = 0; i < roads.Length; i++)
+            {
+                roads[i].enabled = false;
+            }
+        }
+    }
+
 
     private void OnMouseOver()
     {
@@ -53,8 +66,6 @@ public class TileScript : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        road = GameObject.FindGameObjectWithTag("Road");
-        rScript = GameObject.FindGameObjectWithTag("Road").GetComponent<RoadScript>();
     }
 
     // Update is called once per frame
