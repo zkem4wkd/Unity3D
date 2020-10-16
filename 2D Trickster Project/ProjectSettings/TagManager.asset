@@ -7,8 +7,7 @@ TagManager:
   - Tile
   - Road
   - Wall
-  - Miner
-  - Zombie
+  - Monster
   layers:
   - Default
   - TransparentFX

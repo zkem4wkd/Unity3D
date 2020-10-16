@@ -5,6 +5,9 @@ using UnityEngine.Tilemaps;
 
 public class RoadScript : MonoBehaviour
 {
+    GameManager gManager;
+    GameObject loading;
+    public GameObject gObject;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Tile")
@@ -19,10 +22,12 @@ public class RoadScript : MonoBehaviour
             collision.gameObject.GetComponent<TileScript>().roadOn = false;
         }
     }
+
     // Start is called before the first frame update
     void Start()
     {
         this.GetComponent<TilemapCollider2D>().enabled = false;
+        gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
