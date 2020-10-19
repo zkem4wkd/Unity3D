@@ -91,6 +91,7 @@ public class TileScript : MonoBehaviour
     {
         delay = false;
         GameObject gObject = (GameObject)Instantiate(loading, this.transform.position, quaternion.identity);
+        gObject.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + 0.5f);
         Destroy(gObject, 1f);
         yield return new WaitForSeconds(1f);
         delay = true;

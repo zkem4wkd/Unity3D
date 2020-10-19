@@ -20,7 +20,6 @@ public class GameManager : MonoBehaviour
     public Image Hp;
     public float pHp;
     public float eHp;
-
     public GameObject loading;
     // Start is called before the first frame update
     void Start()
@@ -43,28 +42,34 @@ public class GameManager : MonoBehaviour
         {
             PlayerDamaged();
         }
-        if(pTurn == true)
+        StartCoroutine(ChangeTurn());
+    }
+    IEnumerator ChangeTurn()
+    {
+        if (pTurn == true)
         {
             Transform player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             vCam.Follow = player;
             turnText.text = "Player Turn : " + pCount;
             pHpText.text = pHp + "/ 100";
             Hp.fillAmount = pHp / 100f;
-            if(pCount == 0)
+            if (pCount == 0)
             {
+                yield return new WaitForSeconds(2f);
                 pTurn = false;
                 eTurn = true;
                 eCount = 3;
                 vCam.Follow = null;
             }
         }
-        else if(eTurn == true)
+        else if (eTurn == true)
         {
             Transform monster = GameObject.FindGameObjectWithTag("Monster").GetComponent<Transform>();
             vCam.Follow = monster;
             turnText.text = "Enemy Turn : " + eCount;
             if (eCount == 0)
             {
+                yield return new WaitForSeconds(2f);
                 pTurn = true;
                 eTurn = false;
                 pCount = 3;

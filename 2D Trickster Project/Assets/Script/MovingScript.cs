@@ -2,20 +2,25 @@
 using System.Collections.Generic;
 using System.Reflection;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.PlayerLoop;
 using UnityEngine.Tilemaps;
 
 public class MovingScript : MonoBehaviour
 {
     GameManager gManager;
+    mMoving mScript;
     public float speed = 3f;
     Camera camera;
     Vector2 mousePosition;
     Animator ani;
     Transform player;
+    Transform tMonster;
     Vector2 pos;
     RaycastHit2D hit;
     bool mBool;
+    public bool action = false;
+    public GameObject atkBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -23,8 +28,11 @@ public class MovingScript : MonoBehaviour
         camera = GameObject.Find("Main Camera").GetComponent<Camera>();
         ani = GetComponent<Animator>();
         player = GetComponent<Transform>();
+        tMonster = GameObject.FindGameObjectWithTag("Monster").GetComponent<Transform>();
+        mScript = GameObject.FindGameObjectWithTag("Monster").GetComponent<mMoving>();
         mBool = false;
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        atkBtn.SetActive(false);
     }
 
     //private void playerMove()
@@ -57,7 +65,7 @@ public class MovingScript : MonoBehaviour
                     pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     hit = Physics2D.Raycast(pos, Vector2.zero);
                     float dis = Vector2.Distance(player.transform.position, hit.collider.transform.position);
-                    if (hit.collider.GetComponent<TileScript>().roadOn == true && dis > 0.1f)
+                    if (hit.collider.GetComponent<TileScript>().roadOn == true && dis > 0.5f)
                     {
                         mBool = true;
                     }
@@ -67,6 +75,16 @@ public class MovingScript : MonoBehaviour
         if (mBool == true)
         {
             Move();
+        }
+
+        float dis1 = Vector2.Distance(this.transform.position, tMonster.transform.position);
+        if(gManager.pTurn == true && dis1 < 1f)
+        {
+            atkBtn.SetActive(true);
+        }
+        else
+        {
+            atkBtn.SetActive(false);
         }
     }
     void Move()
@@ -88,6 +106,22 @@ public class MovingScript : MonoBehaviour
             mBool = false;
             gManager.pCount--;
         }
+    }
+
+    public void Attack()
+    {
+        action = true;
+        ani.SetBool("Attack", true);
+        gManager.pCount--;
+        mScript.EnemyHit();
+        StartCoroutine(AniDelay());
+        
+    }
+    IEnumerator AniDelay()
+    {
+        yield return new WaitForSeconds(0.5f);
+        ani.SetBool("Attack", false);
+        action = false;
     }
 }
 // Update is called once per frame
