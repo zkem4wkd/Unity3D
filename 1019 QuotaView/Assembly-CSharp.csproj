@@ -63,8 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\Isometric.cs" />
     <Compile Include="Assets\Script\TestIsometric.cs" />
+    <Compile Include="Assets\Script\TestTile.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

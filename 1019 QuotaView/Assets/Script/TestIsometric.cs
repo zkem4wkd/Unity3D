@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEditorInternal;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.UI;
+using UnityEngine.XR.WSA.Input;
+
 
 public class TestIsometric : MonoBehaviour
 {
-    public Button createTileBtn;
-    public Button createMyTilebtn;
     public int colCount, rowCount;
-    public int myColPosition, myRowPosition;
+    public Vector2 startPos;
 
     private GameObject mapTile;
     private Coroutine routine;
@@ -20,145 +21,233 @@ public class TestIsometric : MonoBehaviour
     private int row = 0; //열
 
     private GameObject my;
-    private Vector2 vec2;
-    private Vector2 tileVec2;
-    private Dictionary<Vector2, GameObject> dicFIndTile =
-        new Dictionary<Vector2, GameObject>();
+    private GameObject motherNode;
+    private GameObject targetNode;
+    private GameObject selectedTile;
 
-    // Start is called before the first frame update
+    private Dictionary<Vector2, GameObject> dicFIndTile = new Dictionary<Vector2, GameObject>();
+    private List<GameObject> openList = new List<GameObject>();
+    private List<GameObject> closeList = new List<GameObject>();
+
     void Start()
     {
-        this.createTileBtn.onClick.AddListener(() =>
-        {
-            this.CreateMap();
-        });
-
-        createMyTilebtn.onClick.AddListener(() =>
-        {
-            CreateTile();
-        });
-        TileCheck();
-
-    }
-
-    private void CreateTile()
-    {
-        if(my == null)
-        {
-            my = Instantiate(Resources.Load<GameObject>("myisoTile"));
-
-            CreateTileMap(my, myColPosition, myRowPosition);
-        }
+        this.CreateMap();
+        this.CreateTile();
+        this.TileCheck();
     }
 
     void TileCheck()
     {
-        if(routine != null)
+        if (this.routine != null)
         {
-            StopCoroutine(routine);
+            StopCoroutine(this.routine);
         }
-        routine = StartCoroutine(TileCheckImpl());
+        this.routine = StartCoroutine(this.TileCheckImpl());
     }
+
     IEnumerator TileCheckImpl()
     {
-        while(true)
+        while (true)
         {
-            if(Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
-                Vector2 worldpos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                RaycastHit2D hit = Physics2D.Raycast(worldpos, Vector2.zero);
-                if(hit.collider != null)
-                {
-                    var data = dicFIndTile.TryGetValue(vec2, out mapTile);
+                Vector2 worldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
-                    if(hit.collider == data)
-                    {
-                        var target = hit.collider.gameObject;
-                        MoveTransform(target);
-                        break;
-                    }
+                RaycastHit2D hit = Physics2D.Raycast(worldPos, Vector2.zero);
+
+                if (hit.collider != null)
+                {
+                    this.targetNode = hit.collider.gameObject;
+                    this.FIndNextPos();
                 }
             }
             yield return null;
         }
     }
-    private void MoveTransform(GameObject target)
+
+    private void FIndNextPos()
     {
-        if(routine != null)
+        if (this.routine != null)
         {
-            StopCoroutine(routine);
+            StopCoroutine(this.routine);
         }
-        routine = StartCoroutine(MoveTransformImpl(target));
+        this.routine = StartCoroutine(this.FindNextPosImpl());
     }
 
-    IEnumerator MoveTransformImpl(GameObject target)
+    private IEnumerator FindNextPosImpl()
     {
         while (true)
         {
-            var dir = (target.transform.position - my.transform.position).normalized;
-            var distance = Vector3.Distance(target.transform.position, my.transform.position);
-
-            my.transform.position += dir * 2f * Time.deltaTime;
-            if (distance <= 0.02f)
+            if (this.targetNode == this.motherNode)
             {
-                Debug.Log("complete");
-                my.transform.position = target.transform.position;
-                TileCheck();
+                Debug.Log("도착");
+                this.TileCheck();
                 break;
             }
+            this.FindNode();
+            this.SetFGH();
+            this.SortingOpenList();
+
             yield return null;
         }
     }
+
+
+    private void SortingOpenList()
+    {
+        IEnumerable<GameObject> sortNode = this.openList.OrderBy(x => x.GetComponent<TestTile>().f);
+
+        this.selectedTile = sortNode.FirstOrDefault<GameObject>();
+
+        this.NextNode();
+    }
+
+    private void SetActiveFGH(GameObject tile)
+    {
+        if (!this.openList.Contains(tile))
+        {
+            tile.GetComponent<TestTile>().G.gameObject.SetActive(false);
+            tile.GetComponent<TestTile>().F.gameObject.SetActive(false);
+            tile.GetComponent<TestTile>().H.gameObject.SetActive(false);
+        }
+        else
+        {
+            tile.GetComponent<TestTile>().G.gameObject.SetActive(true);
+            tile.GetComponent<TestTile>().F.gameObject.SetActive(true);
+            tile.GetComponent<TestTile>().H.gameObject.SetActive(true);
+        }
+    }
+
+    private void NextNode()
+    {
+        this.motherNode = this.selectedTile;
+        this.selectedTile.GetComponentInChildren<SpriteRenderer>().color = Color.magenta;
+    }
+
+    private void FindNode()
+    {
+        var mother = this.motherNode.GetComponent<TestTile>();
+
+        var motherX = mother.vec2.x - 1;
+        var motherY = mother.vec2.y - 1;
+        var maxX = mother.vec2.x + 1;
+        var maxY = mother.vec2.y + 1;
+
+        if (motherX < 0)
+        {
+            motherX = 0;
+        }
+        if (motherY < 0)
+        {
+            motherY = 0;
+        }
+
+        for (int x = (int)motherX; x <= maxX; x++)
+        {
+            for (int y = (int)motherY; y <= maxY; y++)
+            {
+                var data = new Vector2(x, y);
+
+                var tile = this.dicFIndTile[data];
+
+                if (tile.GetComponent<TestTile>().isBlock != true && !this.closeList.Contains(tile))
+                {
+                    this.openList.Add(tile);
+                    this.openList.Remove(motherNode);
+
+                    this.closeList.Add(motherNode);
+                    if (tile != this.motherNode)
+                    {
+                        tile.GetComponent<SpriteRenderer>().color = Color.yellow;
+                    }
+                }
+            }
+        }
+    }
+
+    private void SetFGH()
+    {
+        foreach (var tile in this.openList)
+        {
+            var tileScript = tile.GetComponent<TestTile>();
+            this.SetActiveFGH(tile);
+            var getG = tile.GetComponent<TestTile>().g;
+            var getH = tile.GetComponent<TestTile>().h;
+            getG = Mathf.Round(Vector2.Distance(tile.GetComponent<TestTile>().vec2, this.motherNode.GetComponent<TestTile>().vec2) * 10);
+            var dx = Mathf.Abs(tile.GetComponent<TestTile>().vec2.x - this.targetNode.GetComponent<TestTile>().vec2.x);
+            var dy = Mathf.Abs(tile.GetComponent<TestTile>().vec2.y - this.targetNode.GetComponent<TestTile>().vec2.y);
+
+            getH = (dx + dy) * 10;
+
+            tile.GetComponent<TestTile>().f = getG + getH;
+
+            tileScript.G.text = getG.ToString();
+            tileScript.H.text = getH.ToString();
+            tileScript.F.text = tile.GetComponent<TestTile>().f.ToString();
+        }
+    }
+
+    #region 맵, 타일 생성
+    private void CreateTile()
+    {
+        if (this.my == null)
+        {
+            this.my = Instantiate(Resources.Load<GameObject>("myIsoTile"));
+
+            this.CreatedTileMap(my, this.startPos.x, this.startPos.y);
+            this.motherNode = my;
+        }
+    }
+
     private void CreateMap()
     {
-        while(true)
+        while (true)
         {
-            //Resources폴더가 있어야된다. 
-            //리소스폴더가 시작점 거기에 있는 isoTile이라는 이름의 게임오브젝트를 가져온다.
-            mapTile = Instantiate(Resources.Load<GameObject>("isoTile"));
-            mapTile.tag = "Tile";
+            this.mapTile = Instantiate(Resources.Load<GameObject>("isoTile"));
 
-            var isometric = GameObject.Find("TestIsometricBuilding");
+            this.mapTile.tag = "Tile";
 
-            //TestIsometricBuilding->mapTile
-            mapTile.transform.SetParent(isometric.transform);
-            CreateTileMap(mapTile, col, row);
-            col++;
-            if(col >= colCount)
+            this.mapTile.transform.SetParent(this.transform);
+
+            this.CreatedTileMap(this.mapTile, this.col, row);
+            this.dicFIndTile.Add(new Vector2(col, row), mapTile);
+            this.col++;
+
+            if (this.col >= this.colCount)
             {
-                col = 0;
-                row++;
+                this.col = 0;
+                this.row++;
             }
-            if(row >=rowCount)
+            if (this.row >= this.rowCount)
             {
-                createTileBtn.gameObject.SetActive(false);
                 row = 0;
                 break;
             }
-            dicFIndTile.Add(new Vector2(col, row), mapTile);
+
+
         }
     }
-    private void CreateTileMap(GameObject tileMap, float x, float y)
+
+    private void CreatedTileMap(GameObject tileMap, float x, float y)
     {
-        vec2 = new Vector2(x, y);
+        var vec2 = new Vector2(x, y);
 
-        if(tileMap.GetComponentInChildren<TextMesh>())
+        if (tileMap.GetComponentInChildren<TextMesh>())
         {
-            tileMap.GetComponentInChildren<TextMesh>().text
-                = string.Format("({0},{1})", x, y);
+            tileMap.GetComponentInChildren<TextMesh>().text = string.Format("({0},{1})", x, y);
+            this.SetActiveFGH(tileMap);
         }
 
-        //screen  world
-        //map->ui 
-        var screen = MapToScreen(vec2);
+        tileMap.AddComponent<TestTile>();
+        tileMap.GetComponent<TestTile>().vec2 = vec2;
 
-        var screenPos = 
-            Camera.main.ScreenToWorldPoint(new Vector2(
-                screen.x + 512, screen.y + 384+100));
+        var screen = this.MapToScreen(vec2);
 
-        tileMap.transform.position = new Vector3(screenPos.x, screenPos.y, 0);        
+        var screenPos = Camera.main.ScreenToWorldPoint(new Vector2(screen.x + 512, screen.y + 384 + 100));
+
+        tileMap.transform.position = new Vector3(screenPos.x, screenPos.y, 0);
     }
-    //맵좌표를 스크린좌표로
+
     public Vector2 MapToScreen(Vector2 mapPos)
     {
         var screenX = mapPos.x * this.tileWidth - (mapPos.y * this.tileWidth);
@@ -166,8 +255,5 @@ public class TestIsometric : MonoBehaviour
 
         return new Vector2(screenX, screenY);
     }
-
-
-
-    
+    #endregion
 }
