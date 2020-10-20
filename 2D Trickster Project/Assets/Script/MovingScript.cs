@@ -115,11 +115,10 @@ public class MovingScript : MonoBehaviour
         gManager.pCount--;
         mScript.EnemyHit();
         StartCoroutine(AniDelay());
-        
     }
     IEnumerator AniDelay()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", false);
         action = false;
     }

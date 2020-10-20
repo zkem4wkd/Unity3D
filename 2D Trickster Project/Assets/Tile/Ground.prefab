@@ -2666,7 +2666,7 @@ TilemapRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
-  m_ChunkCullingBounds: {x: 5.4583335, y: 2.5416667, z: 0}
+  m_ChunkCullingBounds: {x: 3.4722223, y: 1.5277777, z: 0}
   m_MaxChunkCount: 16
   m_MaxFrameAge: 16
   m_SortOrder: 3

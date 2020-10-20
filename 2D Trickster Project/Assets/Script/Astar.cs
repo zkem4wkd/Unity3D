@@ -28,7 +28,7 @@ public class Astar : MonoBehaviour
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         targetPos = new Vector2Int((int)player.transform.position.x, (int)player.transform.position.y);
         startPos = new Vector2Int((int)this.transform.position.x, (int)this.transform.position.y);
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             PathFinding();
         }
@@ -92,7 +92,7 @@ public class Astar : MonoBehaviour
 
                 for (int i = 0; i < FinalNodeList.Count; i++)
                 {
-                    print(i + "번째는 " + FinalNodeList[i].x + ", " + FinalNodeList[i].y);
+                    //print(i + "번째는 " + FinalNodeList[i].x + ", " + FinalNodeList[i].y);
                     return;
                 }
             }
