@@ -5,99 +5,59 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.XR.WSA.Input;
 
+public class Enemy
+{
+    public string name { get; set; }
+    public int Maxhp { get; set; }
+    public int damage { get; set; }
+}
 public class mMoving : MonoBehaviour
 {
-    Astar astar;
     GameManager gManager;
     Animator ani;
     Animator pAni;
     Transform pPosition;
-    IEnumerator eMoving;
+    public Image hpBar;
     float dis;
+    public float eHp;
+    float maxEHp;
     bool action = false;
-    SpriteRenderer mAlpha;
-    float a = 255;
+    Color color;
     // Start is called before the first frame update
     void Start()
     {
-        astar = GameObject.FindGameObjectWithTag("Monster").GetComponent<Astar>();
+        Enemy pineapple = new Enemy();
+        pineapple.Maxhp = 50;
+        maxEHp = pineapple.Maxhp;
+        eHp = maxEHp;
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         pPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         ani = GetComponent<Animator>();
         pAni = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        eMoving = EnemyMoving();
-        mAlpha = GetComponent<SpriteRenderer>();
-
+        color = this.GetComponent<Color>();
+        
     }
-    IEnumerator EnemyMoving()
-    {
-        if(gManager.eTurn == true && gManager.eCount > 0)
-        {
-            action = true;
-            
-            for (int i = 0; i < astar.FinalNodeList.Count; i++)
-            {
-                Vector2 targetPos = new Vector2(astar.FinalNodeList[i].x, astar.FinalNodeList[i].y);
-                //this.transform.position = Vector3.MoveTowards(this.transform.position,targetPos , 0.1f * Time.deltaTime); 
-                this.transform.position = new Vector2(astar.FinalNodeList[i].x, astar.FinalNodeList[i].y);
-                ani.SetBool("Moving", true);
-            }
-            yield return new WaitForSeconds(2f);
-        }
-    }
-    //IEnumerator rayCoroutine()
-    //{
-    //    Ray2D ray = new Ray2D(this.transform.position, Vector2.down);
-    //    Debug.DrawRay(ray.origin, ray.direction * 1, Color.red);
-    //    RaycastHit2D eHit;
-    //    eHit = Physics2D.Raycast(new Vector2(transform.position.x + 2, transform.position.y), transform.right, 1, 1);
-    //    if (eHit != null && eHit.transform.gameObject.CompareTag("Tile"))
-    //    {
-    //        Debug.Log(eHit.transform.gameObject.name);
-    //    }
-    //    yield return null;
-    //}
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (gManager.eTurn == true &&collision.CompareTag("Tile"))
-        {
-            Debug.Log(collision.gameObject.name);
-            this.transform.position = collision.transform.position;
-            ani.SetBool("Moving", false);
-            gManager.eCount--;
-            StartCoroutine(MovingDelay());
-        }
-    }
-    IEnumerator MovingDelay()
-    {
-        yield return new WaitForSeconds(1f);
-        action = false;
-        StopCoroutine(eMoving);
-    }
-    //private void OnTriggerExit2D(Collider2D collision)
-    //{
-    //    if(collision.CompareTag("Tile"))
-    //    {
-    //        collision.enabled = true;
-    //    }
-    //}
     public void EnemyHit()
     {
         ani.SetBool("Hit", true);
-        gManager.eHp -= 10;
+        eHp -= 10;
         StartCoroutine(AniDelay());
-        if(gManager.eHp <= 0)
+        if(eHp <= 0)
         {
-            ani.SetBool("Die", true);
             StartCoroutine(DeadEnemy());
         }
     }
     IEnumerator DeadEnemy()
     {
-        while (mAlpha.color.a >= 1f)
+        float a = 1;
+        ani.SetBool("Die", true);
+        while (a <= 1f)
         {
-            yield return new WaitForSeconds(0.05f);
-            if (mAlpha.color.a <= 0.1f)
+            color = new Color(255, 255, 255, a);
+            a -= 0.2f;
+            ani.SetBool("die", false);
+            yield return new WaitForSeconds(0.5f);
+            if (a <= 0.1f)
             {
                 Destroy(this.gameObject);
             }
@@ -125,17 +85,35 @@ public class mMoving : MonoBehaviour
         action = false;
     }
 
+    IEnumerator DrillAttack()
+    {
+        action = true;
+        pPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        yield return new WaitForSeconds(1f);
+        ani.SetBool("Attack", true);
+        yield return new WaitForSeconds(1f);
+        ani.SetBool("Attack", false);
+        gManager.DrillDamaged();
+        gManager.eCount--;
+        yield return new WaitForSeconds(1.5f);
+        action = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (gManager.eTurn == true)
         {
             dis = Vector2.Distance(this.transform.position, pPosition.transform.position);
-            StartCoroutine(EnemyMoving());
             if (dis < 1f && action == false && gManager.eCount > 0)
             {
                 StartCoroutine(EnemyAttack());
             }
+            else if(dis > 1f && action == false && gManager.eCount > 0)
+            {
+                StartCoroutine(DrillAttack());
+            }
         }
+        hpBar.fillAmount = eHp / 50f;
     }
 }

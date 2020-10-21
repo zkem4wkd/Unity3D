@@ -9,6 +9,8 @@ public class AtkButton : MonoBehaviour
     private Transform tPlayer;
     GameManager gManager;
     MovingScript pScript;
+    DrillScript dScript;
+    Animator pAni;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +18,8 @@ public class AtkButton : MonoBehaviour
         tPlayer = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         pScript = GameObject.FindGameObjectWithTag("Player").GetComponent<MovingScript>();
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        pAni = tPlayer.gameObject.GetComponent<Animator>();
+        dScript = GameObject.Find("DrillGauge").GetComponent<DrillScript>();
     }
 
     public void Attack()
@@ -28,6 +32,13 @@ public class AtkButton : MonoBehaviour
         else
         {
             Debug.Log("Nope");
+        }
+    }
+    public void Drill()
+    {
+        if (gManager.pCount > 0 && pScript.action == false && dScript.drillGauge < 100)
+        {
+            pScript.Drill();
         }
     }
 }

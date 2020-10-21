@@ -30,9 +30,4 @@ public class RoadScript : MonoBehaviour
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }

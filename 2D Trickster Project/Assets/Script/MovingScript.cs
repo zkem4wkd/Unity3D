@@ -8,6 +8,7 @@ using UnityEngine.Tilemaps;
 
 public class MovingScript : MonoBehaviour
 {
+    DrillScript drill;
     GameManager gManager;
     mMoving mScript;
     public float speed = 3f;
@@ -21,6 +22,7 @@ public class MovingScript : MonoBehaviour
     bool mBool;
     public bool action = false;
     public GameObject atkBtn;
+    public GameObject drillBtn;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +34,7 @@ public class MovingScript : MonoBehaviour
         mScript = GameObject.FindGameObjectWithTag("Monster").GetComponent<mMoving>();
         mBool = false;
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        drill = GameObject.Find("DrillGauge").GetComponent<DrillScript>();
         atkBtn.SetActive(false);
     }
 
@@ -58,7 +61,7 @@ public class MovingScript : MonoBehaviour
     //}
     void Update()
 {
-            if (mBool == false && gManager.pTurn == true)
+            if (mBool == false && gManager.pTurn == true && gManager.pCount > 0)
             {
                 if (Input.GetMouseButtonDown(0))
                 {
@@ -91,6 +94,7 @@ public class MovingScript : MonoBehaviour
     {
       this.transform.position = Vector3.MoveTowards(player.transform.position, hit.collider.transform.position, speed * Time.deltaTime);
       ani.SetBool("Moving", true);
+        action = true;
       if (hit.collider.transform.position.x > transform.position.x)
       {
           player.localScale = new Vector3(-3, 3, 1);
@@ -105,21 +109,31 @@ public class MovingScript : MonoBehaviour
             ani.SetBool("Moving", false);
             mBool = false;
             gManager.pCount--;
+            action = false;
         }
     }
 
     public void Attack()
     {
         action = true;
-        ani.SetBool("Attack", true);
         gManager.pCount--;
+        ani.SetBool("Attack", true);
         mScript.EnemyHit();
+        StartCoroutine(AniDelay());
+    }
+    public void Drill()
+    {
+        action = true;
+        gManager.pCount--;
+        ani.SetBool("Drill", true);
         StartCoroutine(AniDelay());
     }
     IEnumerator AniDelay()
     {
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", false);
+        ani.SetBool("Drill", false);
+        drill.drillGauge += 5;
         action = false;
     }
 }
