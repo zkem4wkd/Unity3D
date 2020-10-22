@@ -24,8 +24,7 @@ public class AtkButton : MonoBehaviour
 
     public void Attack()
     {
-        float dis = Vector2.Distance(tPlayer.transform.position, tMonster.transform.position);
-        if (dis < 1f && gManager.pCount > 0 && pScript.action == false)
+        if (gManager.pCount > 0 && pScript.action == false)
         {
             pScript.Attack();
         }

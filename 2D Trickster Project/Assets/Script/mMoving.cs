@@ -10,6 +10,7 @@ public class Enemy
     public string name { get; set; }
     public int Maxhp { get; set; }
     public int damage { get; set; }
+
 }
 public class mMoving : MonoBehaviour
 {
@@ -22,7 +23,9 @@ public class mMoving : MonoBehaviour
     public float eHp;
     float maxEHp;
     bool action = false;
-    Color color;
+    public bool myTurn = false;
+    SpriteRenderer color;
+    float a = 1;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,32 +37,32 @@ public class mMoving : MonoBehaviour
         pPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         ani = GetComponent<Animator>();
         pAni = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
-        color = this.GetComponent<Color>();
-        
+        color = this.GetComponent<SpriteRenderer>();
+        gManager.Enemies.Add(this.gameObject);
+        myTurn = false;
     }
     public void EnemyHit()
     {
         ani.SetBool("Hit", true);
         eHp -= 10;
         StartCoroutine(AniDelay());
-        if(eHp <= 0)
+        if (eHp <= 0)
         {
             StartCoroutine(DeadEnemy());
         }
     }
     IEnumerator DeadEnemy()
     {
-        float a = 1;
-        ani.SetBool("Die", true);
+        ani.SetTrigger("Die");
         while (a <= 1f)
         {
-            color = new Color(255, 255, 255, a);
+            color.color = new Color(255, 255, 255, a);
             a -= 0.2f;
-            ani.SetBool("die", false);
             yield return new WaitForSeconds(0.5f);
             if (a <= 0.1f)
             {
                 Destroy(this.gameObject);
+                gManager.Enemies.Remove(this.gameObject);
             }
         }
     }
@@ -83,6 +86,8 @@ public class mMoving : MonoBehaviour
         gManager.eCount--;
         yield return new WaitForSeconds(1.5f);
         action = false;
+        myTurn = false;
+        gManager.EnemyRandomTurn();
     }
 
     IEnumerator DrillAttack()
@@ -97,23 +102,36 @@ public class mMoving : MonoBehaviour
         gManager.eCount--;
         yield return new WaitForSeconds(1.5f);
         action = false;
+        myTurn = false;
+        gManager.EnemyRandomTurn();
     }
-
     // Update is called once per frame
     void Update()
     {
-        if (gManager.eTurn == true)
+        if (gManager.eTurn == true && myTurn == true)
         {
             dis = Vector2.Distance(this.transform.position, pPosition.transform.position);
             if (dis < 1f && action == false && gManager.eCount > 0)
             {
                 StartCoroutine(EnemyAttack());
             }
-            else if(dis > 1f && action == false && gManager.eCount > 0)
+            else if (dis > 1f && action == false && gManager.eCount > 0)
             {
                 StartCoroutine(DrillAttack());
             }
         }
         hpBar.fillAmount = eHp / 50f;
+        if (pPosition.position.x < this.transform.position.x)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
+        }
+        else
+        {
+            this.transform.localScale = new Vector3(-1, 1, 1);
+        }
+        if(gManager.eTurn == true && myTurn == true)
+        {
+            gManager.vCam.Follow = this.transform;
+        }
     }
 }

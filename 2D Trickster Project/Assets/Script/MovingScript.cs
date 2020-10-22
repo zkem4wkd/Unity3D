@@ -60,48 +60,66 @@ public class MovingScript : MonoBehaviour
     //    }
     //}
     void Update()
-{
-            if (mBool == false && gManager.pTurn == true && gManager.pCount > 0)
+    {
+        if (mBool == false && gManager.pTurn == true && gManager.pCount > 0)
+        {
+            if (Input.GetMouseButtonDown(0))
             {
-                if (Input.GetMouseButtonDown(0))
+                pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                hit = Physics2D.Raycast(pos, Vector2.zero);
+                float dis = Vector2.Distance(player.transform.position, hit.collider.transform.position);
+                if (hit.collider.GetComponent<TileScript>().roadOn == true && dis > 0.5f)
                 {
-                    pos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                    hit = Physics2D.Raycast(pos, Vector2.zero);
-                    float dis = Vector2.Distance(player.transform.position, hit.collider.transform.position);
-                    if (hit.collider.GetComponent<TileScript>().roadOn == true && dis > 0.5f)
-                    {
-                        mBool = true;
-                    }
+                    mBool = true;
                 }
             }
-        
+        }
+
         if (mBool == true)
         {
             Move();
         }
 
-        float dis1 = Vector2.Distance(this.transform.position, tMonster.transform.position);
-        if(gManager.pTurn == true && dis1 < 1f)
+        //float dis1 = Vector2.Distance(this.transform.position, tMonster.transform.position);
+        //if(gManager.pTurn == true && dis1 < 1f && tMonster.gameObject != null)
+        //{
+        //    atkBtn.SetActive(true);
+        //}
+        //else
+        //{
+        //    atkBtn.SetActive(false);
+        //}
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster") && gManager.pTurn == true)
         {
             atkBtn.SetActive(true);
+            mScript = collision.GetComponent<mMoving>();
         }
-        else
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster"))
         {
-            atkBtn.SetActive(false);
+            if (gManager.pTurn == true)
+            {
+                atkBtn.SetActive(false);
+            }
         }
     }
     void Move()
     {
-      this.transform.position = Vector3.MoveTowards(player.transform.position, hit.collider.transform.position, speed * Time.deltaTime);
-      ani.SetBool("Moving", true);
+        this.transform.position = Vector3.MoveTowards(player.transform.position, hit.collider.transform.position, speed * Time.deltaTime);
+        ani.SetBool("Moving", true);
         action = true;
-      if (hit.collider.transform.position.x > transform.position.x)
-      {
-          player.localScale = new Vector3(-3, 3, 1);
-      }
-      else
-      {
-          player.localScale = new Vector3(3, 3, 1);
+        if (hit.collider.transform.position.x > transform.position.x)
+        {
+            player.localScale = new Vector3(-3, 3, 1);
+        }
+        else
+        {
+            player.localScale = new Vector3(3, 3, 1);
         }
         float dis = Vector2.Distance(player.transform.position, hit.collider.transform.position);
         if (dis < 0.1f)
@@ -127,13 +145,13 @@ public class MovingScript : MonoBehaviour
         gManager.pCount--;
         ani.SetBool("Drill", true);
         StartCoroutine(AniDelay());
+        drill.drillGauge += 5;
     }
     IEnumerator AniDelay()
     {
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", false);
         ani.SetBool("Drill", false);
-        drill.drillGauge += 5;
         action = false;
     }
 }
