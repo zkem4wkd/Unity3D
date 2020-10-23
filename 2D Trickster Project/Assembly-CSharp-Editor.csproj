@@ -63,12 +63,40 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\SAP2DAboutWindow.cs" />
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\SAP2DDynamicObstacleEditor.cs" />
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\SAP2DGridEditorWindow.cs" />
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\SAP2DPathfinderEditor.cs" />
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\SAP2DPathfindingConfigEditor.cs" />
-    <Compile Include="Assets\SAP2D\Resources\Main\Editor\UserGridDataLoader.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvDatabaseInspector.cs" />
+    <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Editor\InvFindItem.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\BMFontReader.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\ComponentSelector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIEditorTools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIJson.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUIMenu.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUISelectionTools.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUISettings.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\NGUITransformInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\SpriteSelector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIAtlasMaker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICameraTool.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICreateNewUIWizard.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UICreateWidgetWizard.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIDrawCallInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIFilledSpriteInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIFontInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIFontMaker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIImageButtonInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UILabelInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPanelTool.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIPopupListInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIScrollBarInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISlicedSpriteInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISliderInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteAnimationInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UISpriteInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITextureInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITexturePacker.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UITiledSpriteInspector.cs" />
+    <Compile Include="Assets\NGUI\Scripts\Editor\UIWidgetInspector.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Unity/2019.4.11f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -731,14 +759,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{198917B1-DB32-922F-6B50-986974034DDE}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{43D4F138-8E08-E651-ED3F-274E72C496BD}</Project>
-      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{73A2E45D-20B2-7B03-6F36-B77DB1BE636E}</Project>
-      <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

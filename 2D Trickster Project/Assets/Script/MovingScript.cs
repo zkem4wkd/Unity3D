@@ -80,15 +80,6 @@ public class MovingScript : MonoBehaviour
             Move();
         }
 
-        //float dis1 = Vector2.Distance(this.transform.position, tMonster.transform.position);
-        //if(gManager.pTurn == true && dis1 < 1f && tMonster.gameObject != null)
-        //{
-        //    atkBtn.SetActive(true);
-        //}
-        //else
-        //{
-        //    atkBtn.SetActive(false);
-        //}
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

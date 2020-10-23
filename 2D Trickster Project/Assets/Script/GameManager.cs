@@ -34,9 +34,12 @@ public class GameManager : MonoBehaviour
     Button endBtn;
     bool turnEnd = false;
     bool res = false;
+    bool pause = false;
     int i;
     Transform tPlayer;
     Transform tMonster;
+    public Image clear;
+    public Image failed;
     // Start is called before the first frame update
     void Start()
     {
@@ -66,7 +69,7 @@ public class GameManager : MonoBehaviour
             int random = Random.Range(0, tiles.Count);
             int mRandom = Random.Range(0, monsters.Count);
             float pDis = Vector2.Distance(tPlayer.position, tiles[random].transform.position);
-            float mDis = Vector2.Distance(tMonster.position, tiles[random].transform.position);
+            float mDis = Vector2.Distance(Enemies[0].transform.position, tiles[random].transform.position);
             for (int i = 0; i < Enemies.Count; i++)
             {
                 float mDis2 = Vector2.Distance(Enemies[i].transform.position, tiles[random].transform.position);
@@ -100,8 +103,23 @@ public class GameManager : MonoBehaviour
         pHpText.text = pHp + "/ 100";
         Hp.fillAmount = pHp / 100f;
         StartCoroutine(ChangeTurn());
+        if(pHp == 0)
+        {
+            Invoke("Failed", 2f);
+        }
     }
-
+    public void Clear()
+    {
+        Time.timeScale = 0;
+        clear.gameObject.SetActive(true);
+        TextMeshProUGUI cText = clear.GetComponentInChildren<TextMeshProUGUI>();
+        cText.text = "채굴률 : " + drill.drillGauge + " % ";
+    }
+    public void Failed()
+    {
+        Time.timeScale = 0;
+        failed.gameObject.SetActive(true);
+    }
     public void EnemyRandomTurn()
     {
         for(int i = 0; i < Enemies.Count; i++)
@@ -113,7 +131,7 @@ public class GameManager : MonoBehaviour
     }
     public void EndTurn()
     {
-        if (pCount >= 0 && pTurn == true && pScript.action == false)
+        if (pCount >= 0 && pTurn == true && pScript.action == false && worldCount > 0)
         {
             pTurn = false;
             eTurn = true;
@@ -124,12 +142,19 @@ public class GameManager : MonoBehaviour
             endBtn.gameObject.SetActive(false);
             EnemyRandomTurn();
         }
-
+        if(worldCount == 0)
+        {
+            Clear();
+        }
     }
     IEnumerator TurnEnd()
     {
         worldCount -= 1;
         i = 0;
+        if(worldCount <= 0)
+        {
+            Clear();
+        }
         yield return null;
     }
     IEnumerator ChangeTurn()
@@ -141,7 +166,7 @@ public class GameManager : MonoBehaviour
             vCam.Follow = player;
             turnText.text = "Player Turn : " + pCount;
         }
-        else if (eTurn == true)
+        else if (eTurn == true && worldCount > 0)
         {
             turnText.text = "Enemy Turn : " + eCount;
             i = 1;

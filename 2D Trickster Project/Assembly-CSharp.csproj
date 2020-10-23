@@ -70,10 +70,13 @@
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\Script\MovingScript.cs" />
     <Compile Include="Assets\Script\RoadScript.cs" />
+    <Compile Include="Assets\Script\SelectStageScript\CSVReader.cs" />
+    <Compile Include="Assets\Script\SelectStageScript\TutorialStage.cs" />
     <Compile Include="Assets\Script\TileScript.cs" />
     <Compile Include="Assets\Script\mMoving.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\상용한글2350자.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
@@ -715,16 +718,7 @@
       <HintPath>D:/GitHub/Unity3D/2D Trickster Project/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
-      <Project>{43D4F138-8E08-E651-ED3F-274E72C496BD}</Project>
-      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
-      <Project>{73A2E45D-20B2-7B03-6F36-B77DB1BE636E}</Project>
-      <Name>Unity.2D.Tilemap.Extras</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup></ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
