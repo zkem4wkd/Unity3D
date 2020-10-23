@@ -63,9 +63,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\FollowingCamera.cs" />
-    <Compile Include="Assets\Script\PlayerMovement.cs" />
-    <Compile Include="Assets\Script\TouchPad.cs" />
+    <Compile Include="Assets\Script\Controller\FollowingCamera.cs" />
+    <Compile Include="Assets\Script\Controller\TouchPad.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyAttack.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyHealth.cs" />
+    <Compile Include="Assets\Script\Enemy\EnemyMove.cs" />
+    <Compile Include="Assets\Script\Player\NormalTarget.cs" />
+    <Compile Include="Assets\Script\Player\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\Player\PlayerHealth.cs" />
+    <Compile Include="Assets\Script\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Script\Player\SkillTarget.cs" />
     <None Include="Assets\Shader\Toon Shading\Sources\Shaders\Toony-LightedOutline.shader" />
     <None Include="Assets\Shader\Toon Shading\Sources\Shaders\Toony-Lighted.shader" />
     <None Include="Assets\Shader\Toon Shading\Sources\Shaders\Toony-Basic.shader" />
