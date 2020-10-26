@@ -63,6 +63,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Controller\EnemySpawn.cs" />
     <Compile Include="Assets\Script\Controller\FollowingCamera.cs" />
     <Compile Include="Assets\Script\Controller\TouchPad.cs" />
     <Compile Include="Assets\Script\Enemy\EnemyAttack.cs" />
