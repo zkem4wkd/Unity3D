@@ -8,6 +8,8 @@ using UnityEngine.Tilemaps;
 
 public class MovingScript : MonoBehaviour
 {
+    public AudioClip attackSound,drillSound;
+    AudioSource sound;
     DrillScript drill;
     GameManager gManager;
     mMoving mScript;
@@ -36,6 +38,7 @@ public class MovingScript : MonoBehaviour
         gManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         drill = GameObject.Find("DrillGauge").GetComponent<DrillScript>();
         atkBtn.SetActive(false);
+        sound = GetComponent<AudioSource>();
     }
 
     //private void playerMove()
@@ -127,6 +130,8 @@ public class MovingScript : MonoBehaviour
         action = true;
         gManager.pCount--;
         ani.SetBool("Attack", true);
+        sound.clip = attackSound;
+        sound.Play();
         mScript.EnemyHit();
         StartCoroutine(AniDelay());
     }
@@ -135,6 +140,8 @@ public class MovingScript : MonoBehaviour
         action = true;
         gManager.pCount--;
         ani.SetBool("Drill", true);
+        sound.clip = drillSound;
+        sound.Play();
         StartCoroutine(AniDelay());
         drill.drillGauge += 10;
     }

@@ -8,14 +8,18 @@ public class MenuScript : MonoBehaviour
 {
     public GameObject Menu;
     bool menuActive = false;
+    public GameObject stageObject;
     public void Continue()
     {
         Menu.SetActive(false);
         menuActive = false;
+        Time.timeScale = 1;
     }
     public void BackToStart()
     {
         SceneManager.LoadScene("StartScene");
+        Destroy(stageObject.gameObject);
+        Time.timeScale = 1;
     }
     public void GameExit()
     {
@@ -27,11 +31,13 @@ public class MenuScript : MonoBehaviour
         {
             Menu.SetActive(true);
             menuActive = true;
+            Time.timeScale = 0;
         }
         else if(Input.GetKeyDown(KeyCode.Escape) && menuActive == true)
         {
             Menu.SetActive(false);
             menuActive = false;
+            Time.timeScale = 1;
         }
     }
 }

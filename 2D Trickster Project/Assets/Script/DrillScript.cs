@@ -8,7 +8,8 @@ public class DrillScript : MonoBehaviour
 {
     Image drillBar;
     TextMeshProUGUI drillText;
-    public float drillGauge;
+    public int drillGauge;
+    public int[] lDrillGauge;
 
     // Start is called before the first frame update
     void Start()
@@ -17,6 +18,8 @@ public class DrillScript : MonoBehaviour
         drillBar.fillAmount = 0;
         drillText = GameObject.Find("DrillText").GetComponent<TextMeshProUGUI>();
         drillGauge = 100;
+        lDrillGauge[1] = 0;
+        lDrillGauge[2] = 0;
     }
 
     // Update is called once per frame

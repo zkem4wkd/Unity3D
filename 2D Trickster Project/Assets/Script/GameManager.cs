@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 using System.Linq;
 using TMPro;
@@ -18,6 +19,8 @@ public class GameManager : MonoBehaviour
     int monsterCount;
     public int maxMonsterCount;
     DrillScript drill;
+    [SerializeField]
+    StageSelect stageSelect;
     TextMeshProUGUI turnText;
     TextMeshProUGUI pHpText;
     TextMeshProUGUI wCountText;
@@ -42,6 +45,9 @@ public class GameManager : MonoBehaviour
     Transform tMonster;
     public Image clear;
     public Image failed;
+    int StageNumber;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -58,10 +64,17 @@ public class GameManager : MonoBehaviour
         tPlayer = pScript.GetComponent<Transform>();
         tMonster = eScript.GetComponent<Transform>();
         Respawn();
+        stageSelect = GameObject.Find("StageObject").GetComponent<StageSelect>();
+        StageNumber = stageSelect.StageNumber;
+        Debug.Log(StageNumber);
     }
     void PlayerDamaged()
     {
         pHp -= 10;
+        if (pHp == 0)
+        {
+            Failed();
+        }
     }
     void Respawn()
     {
@@ -70,11 +83,10 @@ public class GameManager : MonoBehaviour
             int random = Random.Range(0, tiles.Count);
             int mRandom = Random.Range(0, monsters.Count);
             float pDis = Vector2.Distance(tPlayer.position, tiles[random].transform.position);
-            float mDis = Vector2.Distance(Enemies[0].transform.position, tiles[random].transform.position);
             for (int i = 0; i < Enemies.Count; i++)
             {
-                float mDis2 = Vector2.Distance(Enemies[i].transform.position, tiles[random].transform.position);
-                if (pDis > 1f && mDis > 1f && mDis2 > 1f)
+                float mDis = Vector2.Distance(Enemies[i].transform.position, tiles[random].transform.position);
+                if (pDis > 1f  && mDis > 1f)
                 {
                     monsterCount++;
                     GameObject eClone = Instantiate(monsters[mRandom], new Vector2(tiles[random].transform.position.x - 0.5f, tiles[random].transform.position.y), Quaternion.identity) as GameObject;
@@ -95,7 +107,7 @@ public class GameManager : MonoBehaviour
     }
     public void DrillDamaged()
     {
-        drill.drillGauge -= 5;
+        drill.drillGauge -= 10;
     }
     // Update is called once per frame
     void Update()
@@ -115,6 +127,13 @@ public class GameManager : MonoBehaviour
         clear.gameObject.SetActive(true);
         TextMeshProUGUI cText = clear.GetComponentInChildren<TextMeshProUGUI>();
         cText.text = "채굴률 : " + drill.drillGauge + " % ";
+    }
+    public void GoBack()
+    {
+        SceneManager.LoadScene("StageSelect");
+        Destroy(stageSelect.gameObject);
+        Time.timeScale = 1;
+        DontDestroyOnLoad(drill.gameObject);
     }
     public void Failed()
     {

@@ -18,6 +18,8 @@ public class mMoving : MonoBehaviour
     Animator ani;
     Animator pAni;
     Transform pPosition;
+    public AudioClip attackSound, deathSound;
+    AudioSource sound;
     public Image hpBar;
     float dis;
     public float eHp;
@@ -40,6 +42,7 @@ public class mMoving : MonoBehaviour
         color = this.GetComponent<SpriteRenderer>();
         gManager.Enemies.Add(this.gameObject);
         myTurn = false;
+        sound = GetComponent<AudioSource>();
     }
     public void EnemyHit()
     {
@@ -54,6 +57,8 @@ public class mMoving : MonoBehaviour
     IEnumerator DeadEnemy()
     {
         ani.SetTrigger("Die");
+        sound.clip = deathSound;
+        sound.Play();
         while (a <= 1f)
         {
             color.color = new Color(255, 255, 255, a);
@@ -79,6 +84,8 @@ public class mMoving : MonoBehaviour
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", true);
         pAni.SetBool("Hit", true);
+        sound.clip = attackSound;
+        sound.Play();
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", false);
         pAni.SetBool("Hit", false);
@@ -96,6 +103,8 @@ public class mMoving : MonoBehaviour
         pPosition = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", true);
+        sound.clip = attackSound;
+        sound.Play();
         yield return new WaitForSeconds(1f);
         ani.SetBool("Attack", false);
         gManager.DrillDamaged();
