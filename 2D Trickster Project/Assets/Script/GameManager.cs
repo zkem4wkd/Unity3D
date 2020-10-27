@@ -15,7 +15,8 @@ public class GameManager : MonoBehaviour
     public List<GameObject> tiles;
     public List<GameObject> monsters;
     public List<GameObject> Enemies = new List<GameObject>();
-    public int monsterCount;
+    int monsterCount;
+    public int maxMonsterCount;
     DrillScript drill;
     TextMeshProUGUI turnText;
     TextMeshProUGUI pHpText;
@@ -25,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool eTurn = false;
     public int pCount;
     public int eCount;
+    [SerializeField]
     int worldCount;
     public Image Hp;
     public float pHp;
@@ -43,7 +45,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        worldCount = 5;
         pTurn = true;
         pCount = 5;
         turnText = GameObject.Find("TurnText").GetComponent<TextMeshProUGUI>();
@@ -64,7 +65,7 @@ public class GameManager : MonoBehaviour
     }
     void Respawn()
     {
-        if (worldCount % 2 == 0 && res == false && monsterCount < 2)
+        if (worldCount % 2 == 0 && res == false && monsterCount < maxMonsterCount)
         {
             int random = Random.Range(0, tiles.Count);
             int mRandom = Random.Range(0, monsters.Count);
@@ -94,7 +95,7 @@ public class GameManager : MonoBehaviour
     }
     public void DrillDamaged()
     {
-        drill.drillGauge -= 10;
+        drill.drillGauge -= 5;
     }
     // Update is called once per frame
     void Update()

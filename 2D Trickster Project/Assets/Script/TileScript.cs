@@ -12,7 +12,7 @@ public class TileScript : MonoBehaviour
     GameObject loading;
     public bool roadOn = false;
     bool delay = true;
-    public Tilemap tile;
+    Tilemap tile;
     public TilemapCollider2D[] roads = new TilemapCollider2D[5];
 
     private void OnTriggerEnter2D(Collider2D collision)

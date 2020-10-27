@@ -136,7 +136,7 @@ public class MovingScript : MonoBehaviour
         gManager.pCount--;
         ani.SetBool("Drill", true);
         StartCoroutine(AniDelay());
-        drill.drillGauge += 5;
+        drill.drillGauge += 10;
     }
     IEnumerator AniDelay()
     {

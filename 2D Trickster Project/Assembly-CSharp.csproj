@@ -68,10 +68,13 @@
     <Compile Include="Assets\Script\AtkButton.cs" />
     <Compile Include="Assets\Script\DrillScript.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
+    <Compile Include="Assets\Script\MenuScript.cs" />
     <Compile Include="Assets\Script\MovingScript.cs" />
     <Compile Include="Assets\Script\RoadScript.cs" />
     <Compile Include="Assets\Script\SelectStageScript\CSVReader.cs" />
     <Compile Include="Assets\Script\SelectStageScript\TutorialStage.cs" />
+    <Compile Include="Assets\Script\StageScene\StageSelect.cs" />
+    <Compile Include="Assets\Script\StartScene\StartScript.cs" />
     <Compile Include="Assets\Script\TileScript.cs" />
     <Compile Include="Assets\Script\mMoving.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

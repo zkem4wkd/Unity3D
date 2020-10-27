@@ -24,5 +24,9 @@ public class DrillScript : MonoBehaviour
     {
         drillText.text = drillGauge + "%";
         drillBar.fillAmount = drillGauge / 100f;
+        if(drillGauge > 100)
+        {
+            drillGauge = 100;
+        }
     }
 }

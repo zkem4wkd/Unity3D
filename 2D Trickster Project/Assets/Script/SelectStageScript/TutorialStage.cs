@@ -16,10 +16,12 @@ public class TutorialStage : MonoBehaviour
     public Image tImage;
     string[,] Sentence;
     int i = 0;
+    Button enterStageBtn;
     public void Tutorial()
     {
         Background.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.5f);
         textUI.gameObject.SetActive(true);
+        enterStageBtn.gameObject.SetActive(false);
         Time.timeScale = 0;
     }
     public void TutorialText()
@@ -32,15 +34,20 @@ public class TutorialStage : MonoBehaviour
             i = 0;
             Time.timeScale = 1;
             Background.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 1f);
-
+            enterStageBtn.gameObject.SetActive(true);
         }
         mainText.text = data[i]["text"]+" ";
         tImage.sprite = tutorialImage[i-1];
+    }
+    public void StageScene()
+    {
+        SceneManager.LoadScene("StageScene");
     }
     // Start is called before the first frame update
     void Start()
     {
         textUI.gameObject.SetActive(false);
+        enterStageBtn = GameObject.Find("EnterStageBtn").GetComponent<Button>();
     }
 
 }
