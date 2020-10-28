@@ -69,6 +69,7 @@
     <Compile Include="Assets\Script\InputManager.cs" />
     <Compile Include="Assets\Script\PlayerAni.cs" />
     <Compile Include="Assets\Script\PlayerFSM.cs" />
+    <Compile Include="Assets\fantasySpider\FSP_ContinuousRotation.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\AutoBlink.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\CameraController.cs" />
     <Compile Include="Assets\unity-chan!\Unity-chan! Model\Scripts\FaceUpdate.cs" />
