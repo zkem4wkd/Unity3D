@@ -432,6 +432,7 @@ GameObject:
   - component: {fileID: 356743172}
   - component: {fileID: 356743173}
   - component: {fileID: 356743174}
+  - component: {fileID: 356743175}
   m_Layer: 0
   m_Name: StageObject
   m_TagString: Untagged
@@ -480,10 +481,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc22cdbbe3da33943b96edcf63007412, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  stage1: {fileID: 174802868}
+  stage2: {fileID: 1294061852}
   StageNumber: 0
-  drillGauge1: {fileID: 174802868}
-  drillGauge2: {fileID: 1294061852}
   StageObject: {fileID: 356743171}
+--- !u!114 &356743175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356743171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a07e836f3fdfc543942c32040be755d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &517080333
 GameObject:
   m_ObjectHideFlags: 0
@@ -778,7 +791,7 @@ GameObject:
   - component: {fileID: 1297297245}
   - component: {fileID: 1297297244}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Stage1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -796,7 +809,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1366087945}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1067,8 +1080,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
-  - {fileID: 2097536666}
   - {fileID: 1297297243}
+  - {fileID: 2097536666}
   - {fileID: 174802867}
   - {fileID: 1294061851}
   m_Father: {fileID: 0}
@@ -1191,7 +1204,7 @@ GameObject:
   - component: {fileID: 2097536668}
   - component: {fileID: 2097536667}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Stage2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1209,7 +1222,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1366087945}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

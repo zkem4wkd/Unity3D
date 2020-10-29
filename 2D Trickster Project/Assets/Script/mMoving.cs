@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Diagnostics.Tracing;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.XR.WSA.Input;
 
 public class Enemy
 {
@@ -63,7 +62,7 @@ public class mMoving : MonoBehaviour
         {
             color.color = new Color(255, 255, 255, a);
             a -= 0.2f;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(0.15f);
             if (a <= 0.1f)
             {
                 Destroy(this.gameObject);

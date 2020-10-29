@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
-using UnityEngine.XR.WSA.Input;
 
 public class TutorialStage : MonoBehaviour
 {
@@ -17,6 +16,7 @@ public class TutorialStage : MonoBehaviour
     string[,] Sentence;
     int i = 0;
     Button enterStageBtn;
+
     public void Tutorial()
     {
         Background.GetComponent<SpriteRenderer>().color = new Color(255, 255, 255, 0.5f);
@@ -46,6 +46,7 @@ public class TutorialStage : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         textUI.gameObject.SetActive(false);
         enterStageBtn = GameObject.Find("EnterStageBtn").GetComponent<Button>();
     }

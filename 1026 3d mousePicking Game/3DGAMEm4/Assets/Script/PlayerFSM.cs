@@ -36,6 +36,14 @@ public class PlayerFSM : MonoBehaviour
         myAni = GetComponent<PlayerAni>();
         ChangeState(State.Idle, PlayerAni.ANI_ATKIDLE);
     }
+    public void AttackCalculate()
+    {
+        if(curEnemy == null)
+        {
+            return;
+        }
+        curEnemy.GetComponent<EnemyFSM>().ShowHitEffect();
+    }
     //적을 공격하기 위한 함수
     public void AttackEnemy(GameObject enemy)
     {

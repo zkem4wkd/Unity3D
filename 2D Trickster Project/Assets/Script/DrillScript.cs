@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.IO;
 
 public class DrillScript : MonoBehaviour
 {
@@ -18,10 +19,7 @@ public class DrillScript : MonoBehaviour
         drillBar.fillAmount = 0;
         drillText = GameObject.Find("DrillText").GetComponent<TextMeshProUGUI>();
         drillGauge = 100;
-        lDrillGauge[1] = 0;
-        lDrillGauge[2] = 0;
     }
-
     // Update is called once per frame
     void Update()
     {

@@ -143,15 +143,17 @@ public class MovingScript : MonoBehaviour
         sound.clip = drillSound;
         sound.Play();
         StartCoroutine(AniDelay());
-        drill.drillGauge += 10;
+        drill.drillGauge += 5;
     }
     IEnumerator AniDelay()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.6f);
         ani.SetBool("Attack", false);
         ani.SetBool("Drill", false);
+        yield return new WaitForSeconds(1f);
         action = false;
     }
+
 }
 // Update is called once per frame
 

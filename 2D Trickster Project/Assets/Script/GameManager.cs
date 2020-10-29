@@ -10,6 +10,7 @@ using System.Linq;
 using TMPro;
 using UnityEngine.Tilemaps;
 using System.Runtime.ExceptionServices;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class GameManager : MonoBehaviour
     StageSelect stageSelect;
     TextMeshProUGUI turnText;
     TextMeshProUGUI pHpText;
+    TextMeshProUGUI pMpText;
     TextMeshProUGUI wCountText;
     public CinemachineVirtualCamera vCam;
     public bool pTurn = false;
@@ -33,6 +35,8 @@ public class GameManager : MonoBehaviour
     int worldCount;
     public Image Hp;
     public float pHp;
+    public Image Mp;
+    public float pMp;
     mMoving eScript;
     MovingScript pScript;
     public GameObject loading;
@@ -46,7 +50,9 @@ public class GameManager : MonoBehaviour
     public Image clear;
     public Image failed;
     int StageNumber;
-
+    string path = "";
+    public int lDrillGauge;
+    DrillGaugeSave dSave;
 
     // Start is called before the first frame update
     void Start()
@@ -56,7 +62,9 @@ public class GameManager : MonoBehaviour
         turnText = GameObject.Find("TurnText").GetComponent<TextMeshProUGUI>();
         wCountText = GameObject.Find("WorldCount").GetComponent<TextMeshProUGUI>();
         pHpText = GameObject.Find("Hp").GetComponent<TextMeshProUGUI>();
+        pMpText = GameObject.Find("Mp").GetComponent<TextMeshProUGUI>();
         pHp = 100;
+        pMp = 100;
         eScript = GameObject.FindGameObjectWithTag("Monster").GetComponent<mMoving>();
         pScript = GameObject.FindGameObjectWithTag("Player").GetComponent<MovingScript>();
         endBtn = GameObject.Find("EndButton").GetComponent<Button>();
@@ -66,7 +74,7 @@ public class GameManager : MonoBehaviour
         Respawn();
         stageSelect = GameObject.Find("StageObject").GetComponent<StageSelect>();
         StageNumber = stageSelect.StageNumber;
-        Debug.Log(StageNumber);
+        dSave = GetComponent<DrillGaugeSave>();
     }
     void PlayerDamaged()
     {
@@ -108,6 +116,11 @@ public class GameManager : MonoBehaviour
     public void DrillDamaged()
     {
         drill.drillGauge -= 10;
+        if(drill.drillGauge <= 0)
+        {
+            Time.timeScale = 0;
+            failed.gameObject.SetActive(true);
+        }
     }
     // Update is called once per frame
     void Update()
@@ -115,6 +128,8 @@ public class GameManager : MonoBehaviour
         wCountText.text = "World Count : " + worldCount;
         pHpText.text = pHp + "/ 100";
         Hp.fillAmount = pHp / 100f;
+        Mp.fillAmount = pMp / 100f;
+        pMpText.text = pMp + "/ 100";
         StartCoroutine(ChangeTurn());
         if(pHp == 0)
         {
@@ -127,13 +142,14 @@ public class GameManager : MonoBehaviour
         clear.gameObject.SetActive(true);
         TextMeshProUGUI cText = clear.GetComponentInChildren<TextMeshProUGUI>();
         cText.text = "채굴률 : " + drill.drillGauge + " % ";
+        drill.lDrillGauge[StageNumber] = drill.drillGauge;
     }
     public void GoBack()
     {
         SceneManager.LoadScene("StageSelect");
         Destroy(stageSelect.gameObject);
         Time.timeScale = 1;
-        DontDestroyOnLoad(drill.gameObject);
+        dSave.Save(drill.lDrillGauge, StageNumber);
     }
     public void Failed()
     {
@@ -159,8 +175,8 @@ public class GameManager : MonoBehaviour
             eCount = 3;
             vCam.Follow = null;
             worldCount -= 1;
-            endBtn.gameObject.SetActive(false);
             EnemyRandomTurn();
+            endBtn.gameObject.SetActive(false);
         }
         if(worldCount == 0)
         {
@@ -192,16 +208,17 @@ public class GameManager : MonoBehaviour
             i = 1;
             if (eCount == 0)
             {
-                yield return new WaitForSeconds(0.8f);
+                yield return new WaitForSeconds(0.2f);
                 pTurn = true;
                 eTurn = false;
                 pCount = 5;
                 vCam.Follow = null;
-            endBtn.gameObject.SetActive(true);
                 if (i > 0)
                 {
                     StartCoroutine(TurnEnd());
                 }
+                yield return new WaitForSeconds(0.5f);
+                endBtn.gameObject.SetActive(true);
             }
         }
     }

@@ -32,12 +32,20 @@ public class EnemyFSM : MonoBehaviour
     float moveSpeed = 1.3f;
     float attackDelay = 2;
     float attackTimer = 0f;
+
+    public ParticleSystem hitEffect;
     // Start is called before the first frame update
     void Start()
     {
         myAni = GetComponent<EnemyAni>();
         ChangeState(State.Idle, EnemyAni.IDLE);
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        hitEffect.Stop();
+    }
+
+    public void ShowHitEffect() 
+    {
+        hitEffect.Play();
     }
     void UpdateState()
     {
