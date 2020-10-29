@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
         stageSelect = GameObject.Find("StageObject").GetComponent<StageSelect>();
         StageNumber = stageSelect.StageNumber;
         dSave = GetComponent<DrillGaugeSave>();
+        Debug.Log(StageNumber);
     }
     void PlayerDamaged()
     {
@@ -138,18 +139,31 @@ public class GameManager : MonoBehaviour
     }
     public void Clear()
     {
+        List<RecItem> itemList = new List<RecItem>();
+        List<RecItem> itemListRead = DrillIO.Read(Application.dataPath + "DrillGauge.xml");
         Time.timeScale = 0;
         clear.gameObject.SetActive(true);
         TextMeshProUGUI cText = clear.GetComponentInChildren<TextMeshProUGUI>();
         cText.text = "채굴률 : " + drill.drillGauge + " % ";
-        drill.lDrillGauge[StageNumber] = drill.drillGauge;
+        RecItem item = new RecItem();
+        item.DrillGauge = drill.drillGauge;
+        for(int i = 0; i < itemListRead.Count; i++)
+        {
+            itemList.Insert(i, item);
+            itemList[i] = itemListRead[i];
+        }
+        if (drill.drillGauge > itemList[StageNumber - 1].DrillGauge)
+        {
+            itemList.Insert(StageNumber - 1, item);
+            itemList[StageNumber - 1] = item;
+        }
+        DrillIO.Write(itemList, Application.dataPath + "DrillGauge.xml");
     }
     public void GoBack()
     {
         SceneManager.LoadScene("StageSelect");
         Destroy(stageSelect.gameObject);
         Time.timeScale = 1;
-        dSave.Save(drill.lDrillGauge, StageNumber);
     }
     public void Failed()
     {

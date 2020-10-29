@@ -25,6 +25,7 @@ public class MovingScript : MonoBehaviour
     public bool action = false;
     public GameObject atkBtn;
     public GameObject drillBtn;
+    public GameObject hitEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -39,6 +40,7 @@ public class MovingScript : MonoBehaviour
         drill = GameObject.Find("DrillGauge").GetComponent<DrillScript>();
         atkBtn.SetActive(false);
         sound = GetComponent<AudioSource>();
+        hitEffect.SetActive(false);
     }
 
     //private void playerMove()
@@ -90,6 +92,7 @@ public class MovingScript : MonoBehaviour
         {
             atkBtn.SetActive(true);
             mScript = collision.GetComponent<mMoving>();
+            
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
@@ -100,6 +103,17 @@ public class MovingScript : MonoBehaviour
             {
                 atkBtn.SetActive(false);
             }
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Monster") && collision.transform.position.x < this.transform.position.x)
+        {
+            this.transform.localScale = new Vector3(3, 3, 3);
+        }
+        else if (collision.gameObject.CompareTag("Monster") && collision.transform.position.x > this.transform.position.x)
+        {
+            this.transform.localScale = new Vector3(-3, 3, 3);
         }
     }
     void Move()
@@ -130,6 +144,7 @@ public class MovingScript : MonoBehaviour
         action = true;
         gManager.pCount--;
         ani.SetBool("Attack", true);
+        hitEffect.SetActive(true);
         sound.clip = attackSound;
         sound.Play();
         mScript.EnemyHit();
@@ -150,6 +165,7 @@ public class MovingScript : MonoBehaviour
         yield return new WaitForSeconds(0.6f);
         ani.SetBool("Attack", false);
         ani.SetBool("Drill", false);
+        hitEffect.SetActive(false);
         yield return new WaitForSeconds(1f);
         action = false;
     }

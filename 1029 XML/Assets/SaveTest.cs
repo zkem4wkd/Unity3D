@@ -16,7 +16,7 @@ public class SaveTest : MonoBehaviour
             item.Name = "아이템";
             item.Level = 1;
             item.Critical = Random.Range(0.1f, 1.0f);
-            itemList.Add(item);
+            itemList.Insert(i, item);
         }
         ItemIO.Write(itemList,Application.dataPath + "ItemList_Attributes.xml");
     }

@@ -11,15 +11,19 @@ public class StageSelect : MonoBehaviour
     public TextMeshProUGUI stage1,stage2;
     public int StageNumber;
     public GameObject StageObject;
-    int[] drillGauge;
     DrillGaugeSave dSave;
     private void Start()
     {
-        dSave = GetComponent<DrillGaugeSave>();
-        drillGauge[1] = PlayerPrefs.GetInt("채굴률", dSave.drillGauge[1]);
-        drillGauge[2] = PlayerPrefs.GetInt("채굴률", dSave.drillGauge[2]);
-        stage1.text = "채굴률 : " + dSave.drillGauge[1];
-        stage2.text = "채굴률 : " + dSave.drillGauge[2];
+        List<RecItem> itemList = DrillIO.Read(Application.dataPath + "DrillGauge.xml");
+        RecItem drill1 = itemList[0];
+        RecItem drill2 = itemList[1];
+        stage1.text = "최고 채굴률 : " + drill1.DrillGauge + "%";
+        stage2.text = "최고 채굴률 : " + drill2.DrillGauge + "%";
+
+    }
+    public void GoBack()
+    {
+        SceneManager.LoadScene("StageSelect");
     }
     public void SelectStage1()
     {

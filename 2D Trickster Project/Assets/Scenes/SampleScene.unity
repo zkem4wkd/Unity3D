@@ -3578,7 +3578,6 @@ GameObject:
   m_Component:
   - component: {fileID: 276491020}
   - component: {fileID: 276491021}
-  - component: {fileID: 276491022}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -3641,19 +3640,6 @@ MonoBehaviour:
   clear: {fileID: 1848223198}
   failed: {fileID: 515609766}
   lDrillGauge: 0
---- !u!114 &276491022
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 276491019}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a07e836f3fdfc543942c32040be755d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  drillGauge: 
 --- !u!19719996 &300745461 stripped
 TilemapCollider2D:
   m_CorrespondingSourceObject: {fileID: 7227994280954631186, guid: 489a82b65f1dacf4f95b9a51a61f28f8,
@@ -33092,6 +33078,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 276491021}
+    - target: {fileID: 3659209372097927183, guid: 74760d83fd19a2942a83060dfaa226dc,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 3659209372439275804, guid: 74760d83fd19a2942a83060dfaa226dc,
         type: 3}
       propertyPath: m_Name
@@ -33152,36 +33143,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3659209372589084570, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -333.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659209372589084570, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -325.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659209372589084570, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 221.77782
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659209372589084570, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 41.583336
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659209372591358253, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_fontSize
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 3659209372591358253, guid: 74760d83fd19a2942a83060dfaa226dc,
-        type: 3}
-      propertyPath: m_fontSizeBase
-      value: 24
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74760d83fd19a2942a83060dfaa226dc, type: 3}
 --- !u!1001 &4246502546754944883
@@ -33201,6 +33162,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 276491021}
+    - target: {fileID: 4246502547125639855, guid: 70c8ec103815d454fafdb8af81727d3b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4246502547278879477, guid: 70c8ec103815d454fafdb8af81727d3b,
         type: 3}
       propertyPath: m_Name

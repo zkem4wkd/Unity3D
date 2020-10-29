@@ -78,6 +78,9 @@
     <Compile Include="Assets\Script\StageScene\StageSelect.cs" />
     <Compile Include="Assets\Script\StartScene\StartScript.cs" />
     <Compile Include="Assets\Script\TileScript.cs" />
+    <Compile Include="Assets\Script\XmlScript\DrillIO.cs" />
+    <Compile Include="Assets\Script\XmlScript\DrillLoad.cs" />
+    <Compile Include="Assets\Script\XmlScript\DrillSave.cs" />
     <Compile Include="Assets\Script\mMoving.cs" />
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
