@@ -41,7 +41,12 @@ public class PlayerFSM : MonoBehaviour
         ChangeState(State.Idle, PlayerAni.ANI_ATKIDLE);
         myParams = GetComponent<PlayerParams>();
         myParams.InitParams();
-
+        myParams.deadEvent.AddListener(ChangeToPlayerDead);
+    }
+    public void ChangeToPlayerDead()
+    {
+        print("Player Dead");
+        ChangeState(State.Dead, PlayerAni.ANI_DIE);
     }
     //적을 공격하기 위한 함수
     public void AttackEnemy(GameObject enemy)
@@ -137,6 +142,10 @@ public class PlayerFSM : MonoBehaviour
 
     public void MoveTo(Vector3 tPos)
     {
+        if(currentState == State.Dead)
+        {
+            return;
+        }
         curEnemy = null;
         curTargetPos = tPos;
         ChangeState(State.Move, PlayerAni.ANI_WALK);

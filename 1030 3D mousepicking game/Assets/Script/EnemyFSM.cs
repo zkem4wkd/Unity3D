@@ -65,7 +65,10 @@ public class EnemyFSM : MonoBehaviour
     {
         hitEffect.Play();
     }
-
+    public void AttackCalculate()
+    {
+        PlayerParams.SetEnemyAttack(myParams.GetRandomAttack());
+    }
 
 
     void UpdateState()
