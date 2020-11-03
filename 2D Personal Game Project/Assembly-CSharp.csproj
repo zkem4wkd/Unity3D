@@ -63,6 +63,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Script\Gimmick\WeightScript.cs" />
+    <Compile Include="Assets\Script\Gimmick\WeightStatus.cs" />
+    <Compile Include="Assets\Script\Player\Attack\FireAttack.cs" />
+    <Compile Include="Assets\Script\Player\Attack\PlayerAttack.cs" />
+    <Compile Include="Assets\Script\Player\Attack\RockAttack.cs" />
+    <Compile Include="Assets\Script\Player\Attack\WaterAttack.cs" />
+    <Compile Include="Assets\Script\Player\PlayerMove.cs" />
     <Compile Include="Assets\Script\Player\PlayerScript.cs" />
     <Compile Include="Assets\Script\Player\PlayerStatus.cs" />
     <Reference Include="UnityEngine">

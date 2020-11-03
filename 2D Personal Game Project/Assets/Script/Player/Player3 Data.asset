@@ -16,3 +16,4 @@ MonoBehaviour:
   playerNumber: 3
   playerElement: 3
   jumpCount: 1
+  playerWeight: 1
