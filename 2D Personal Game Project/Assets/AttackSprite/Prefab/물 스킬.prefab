@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7556381353596129100}
   - component: {fileID: 7556381353596129103}
   - component: {fileID: 1070487776}
+  - component: {fileID: 3686113582107197045}
   m_Layer: 0
   m_Name: "\uBB3C \uC2A4\uD0AC"
-  m_TagString: Untagged
+  m_TagString: Water
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -129,3 +130,24 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5702889, y: 1.8213903}
   m_EdgeRadius: 0
+--- !u!50 &3686113582107197045
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556381353596129102}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7

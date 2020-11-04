@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 2
   tags:
   - Land
+  - Water
+  - Rock
+  - Wind
+  - Fire
   layers:
   - Default
   - TransparentFX

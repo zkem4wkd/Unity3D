@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class FireAttack : PlayerAttack
 {
-    bool onSkill = false;
 
     public override void Attack()
     {
@@ -28,21 +27,21 @@ public class FireAttack : PlayerAttack
             base.Skill();
             if(tPlayer.localScale.x == 1)
             {
-                GameObject skillObj = Instantiate(skillObject, new Vector2(tPlayer.transform.position.x + 1, tPlayer.transform.position.y), Quaternion.identity);
-                Destroy(skillObj, 2f);
+                GameObject skillObj = Instantiate(skillObject, new Vector2(tPlayer.transform.position.x - 1, tPlayer.transform.position.y), Quaternion.identity);
+                Destroy(skillObj, 7f);
             }
             else
             {
-                GameObject skillObj = Instantiate(skillObject, new Vector2(tPlayer.transform.position.x - 1, tPlayer.transform.position.y), Quaternion.identity);
+                GameObject skillObj = Instantiate(skillObject, new Vector2(tPlayer.transform.position.x + 1, tPlayer.transform.position.y), Quaternion.identity);
                 skillObj.transform.localScale = new Vector3(-1, 1, 1);
-                Destroy(skillObj, 2f);
+                Destroy(skillObj, 7f);
             }
             StartCoroutine(SkillDelay());
         }
     }
     IEnumerator SkillDelay()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(7.5f);
         onSkill = false;
     }
     protected override void Update()

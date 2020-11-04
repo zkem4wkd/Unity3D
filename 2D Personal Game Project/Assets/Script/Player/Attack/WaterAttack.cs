@@ -5,7 +5,6 @@ using UnityEngine;
 public class WaterAttack : PlayerAttack
 {
     Vector3 worldPos;
-    bool onSkill = false;
     // Start is called before the first frame update
     protected override void Start()
     {

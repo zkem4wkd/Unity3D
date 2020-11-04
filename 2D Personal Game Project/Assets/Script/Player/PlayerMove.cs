@@ -5,13 +5,15 @@ using UnityEngine;
 public class PlayerMove : PlayerScript
 {
     int maxJumpCount;
-    int jumpCount;
+    public int jumpCount;
+    public int playerNumber;
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
         maxJumpCount = playerStatus.JumpCount;
         jumpCount = maxJumpCount;
+        playerNumber = playerStatus.PlayerNumber;
     }
     void Move()
     {
@@ -31,7 +33,7 @@ public class PlayerMove : PlayerScript
         {
             base.playerAni.SetBool("Walk", false);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && jumpCount != 0 && action == false)
+        if (Input.GetKeyDown(KeyCode.Space) && jumpCount != 0)
         {
             jumpCount--;
             action = true;

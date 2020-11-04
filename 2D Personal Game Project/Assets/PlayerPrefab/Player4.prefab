@@ -14,9 +14,12 @@ GameObject:
   - component: {fileID: 383785294}
   - component: {fileID: 383785293}
   - component: {fileID: 383785292}
+  - component: {fileID: 1445970947}
+  - component: {fileID: 1445970948}
+  - component: {fileID: 1445970949}
   m_Layer: 0
   m_Name: Player4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,4 +167,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe18043f4f7483c488c995160239df3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStatus: {fileID: 0}
+--- !u!114 &1445970947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129835287611153138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79926e2c928f7c940a9e9fa5c0b52fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pWeight: {fileID: 11400000, guid: bfb05bd0c11cebd44968b7505d52ebe7, type: 2}
+--- !u!114 &1445970948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129835287611153138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0adef1f8499eb479d46bf9831cef88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   playerStatus: {fileID: 11400000, guid: 6f52721bdc652744a97a40b699669ad5, type: 2}
+  playerNumber: 0
+--- !u!114 &1445970949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7129835287611153138}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9963b7bcb55be39409f1813549b4ec9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStatus: {fileID: 0}
+  attackObject: {fileID: 4413395140140044844, guid: ae7cc1eb8dea1f14cb9ec79d27a78d25,
+    type: 3}
+  skillObject: {fileID: 4794910795219207643, guid: 27da7ebb51598d24085e7ac16016e1dd,
+    type: 3}

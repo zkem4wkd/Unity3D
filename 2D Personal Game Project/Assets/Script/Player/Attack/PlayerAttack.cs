@@ -6,7 +6,8 @@ public class PlayerAttack : PlayerScript
 {
     public GameObject attackObject;
     public GameObject skillObject;
-    protected bool onAttack = false;
+    public bool onAttack = false;
+    public bool onSkill = false;
     public virtual void Attack() { }
     public virtual void Skill() { }
 

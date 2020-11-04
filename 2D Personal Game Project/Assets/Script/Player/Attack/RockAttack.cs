@@ -6,7 +6,6 @@ using UnityEngine;
 public class RockAttack : PlayerAttack
 {
     float speed = 6.5f;
-    bool onSkill = false;
     Vector3 mousePos;
     protected override void Start()
     {

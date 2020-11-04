@@ -13,7 +13,10 @@ GameObject:
   - component: {fileID: 7085846662309903648}
   - component: {fileID: 3425277499489704507}
   - component: {fileID: 3134310731110678578}
-  - component: {fileID: 603287292661380266}
+  - component: {fileID: 101603600}
+  - component: {fileID: 101603601}
+  - component: {fileID: 101603602}
+  - component: {fileID: 101603603}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -73,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 4540830246040397953, guid: 2c7be26b4da6f9c4da6354022f698c3b,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -152,7 +155,37 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.74, y: 1.43}
   m_EdgeRadius: 0
---- !u!114 &603287292661380266
+--- !u!114 &101603600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798574614350359339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae0adef1f8499eb479d46bf9831cef88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStatus: {fileID: 11400000, guid: e47717bb8b47e7d48b9fd6d6e11203c2, type: 2}
+--- !u!114 &101603601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798574614350359339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4e4106a30633e545a448a3df5c565b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerStatus: {fileID: 0}
+  attackObject: {fileID: 7118991967338401406, guid: aac999733b236784da5da9caa4540eaa,
+    type: 3}
+  skillObject: {fileID: 3229364324614500901, guid: 3bb3da26d8e767b4fa99b709bed99c67,
+    type: 3}
+--- !u!114 &101603602
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,4 +197,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe18043f4f7483c488c995160239df3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStatus: {fileID: 11400000, guid: e47717bb8b47e7d48b9fd6d6e11203c2, type: 2}
+  playerStatus: {fileID: 0}
+--- !u!114 &101603603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798574614350359339}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79926e2c928f7c940a9e9fa5c0b52fd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pWeight: {fileID: 11400000, guid: d3d85ea6c37db114daec5d0597591391, type: 2}

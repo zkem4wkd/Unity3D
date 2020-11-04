@@ -19,7 +19,6 @@ public class PlayerScript : MonoBehaviour
         tPlayer = this.GetComponent<Transform>();
         playerAni = GetComponent<Animator>();
         playerRigid = GetComponent<Rigidbody2D>();
-
     }
     // Update is called once per frame
     virtual protected void Update()
