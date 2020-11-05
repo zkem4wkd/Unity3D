@@ -5,5 +5,10 @@ using UnityEngine;
 public class WeightScript : MonoBehaviour
 {
     [SerializeField]
-    protected WeightStatus pWeight;
+    public WeightStatus pWeight;
+    public int weight;
+    private void Start()
+    {
+        weight = pWeight.Weight;
+    }
 }
