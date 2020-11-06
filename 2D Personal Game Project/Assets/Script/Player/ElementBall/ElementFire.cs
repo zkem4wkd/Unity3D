@@ -12,7 +12,6 @@ public class ElementFire : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     public void onClick()
     {
@@ -22,6 +21,7 @@ public class ElementFire : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
             click = false;
             fire = Instantiate(fireElement, player.position, Quaternion.identity);
             Destroy(fire, 3.7f);

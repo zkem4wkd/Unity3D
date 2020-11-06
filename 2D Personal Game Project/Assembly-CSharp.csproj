@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameManager\ButtonCoolTime.cs" />
     <Compile Include="Assets\Script\GameManager\ChangePlayer.cs" />
+    <Compile Include="Assets\Script\GameManager\Portal.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\CandleScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\FireTrap.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\Lever.cs" />

@@ -1,0 +1,644 @@
+fileFormatVersion: 2
+guid: a36db88d290de87418f7d4e604340ed1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8730337180888160715
+    second: 001_BELOS_01_0
+  - first:
+      213: -6750006339863512944
+    second: 001_BELOS_01_1
+  - first:
+      213: 4202636425963320650
+    second: 001_BELOS_01_2
+  - first:
+      213: 1295072416033959270
+    second: 001_BELOS_01_3
+  - first:
+      213: -2620773386743632551
+    second: 001_BELOS_01_4
+  - first:
+      213: -1580298223682122251
+    second: 001_BELOS_01_5
+  - first:
+      213: -9025173139323640511
+    second: 001_BELOS_01_6
+  - first:
+      213: -7941997033818902467
+    second: 001_BELOS_01_7
+  - first:
+      213: 8426243038179969376
+    second: 001_BELOS_01_8
+  - first:
+      213: 410986151602760458
+    second: 001_BELOS_01_9
+  - first:
+      213: 7676768255030557894
+    second: 001_BELOS_01_10
+  - first:
+      213: 710437075387559144
+    second: 001_BELOS_01_11
+  - first:
+      213: -1985036596111823203
+    second: 001_BELOS_01_12
+  - first:
+      213: -8430947837579640177
+    second: 001_BELOS_01_13
+  - first:
+      213: -2603086014167705857
+    second: 001_BELOS_01_14
+  - first:
+      213: 8172689046552692574
+    second: 001_BELOS_01_15
+  - first:
+      213: -4889713922165277928
+    second: 001_BELOS_01_16
+  - first:
+      213: 8336143322786154966
+    second: 001_BELOS_01_17
+  - first:
+      213: 3735948804453233698
+    second: 001_BELOS_01_18
+  - first:
+      213: -7256303447848803228
+    second: 001_BELOS_01_19
+  - first:
+      213: 2247832429562107945
+    second: 001_BELOS_01_20
+  - first:
+      213: 7283261132822287698
+    second: 001_BELOS_01_21
+  - first:
+      213: -7923312249669040026
+    second: 001_BELOS_01_22
+  - first:
+      213: -4131763683867849870
+    second: 001_BELOS_01_23
+  - first:
+      213: 7685208069269607510
+    second: 001_BELOS_01_24
+  - first:
+      213: 6295352715175403025
+    second: 001_BELOS_01_25
+  - first:
+      213: -5438751007316276831
+    second: 001_BELOS_01_26
+  - first:
+      213: 7442210733683251475
+    second: 001_BELOS_01_27
+  - first:
+      213: 81299452840933052
+    second: 001_BELOS_01_28
+  - first:
+      213: -8034593514849157146
+    second: 001_BELOS_01_29
+  - first:
+      213: 963279323198794394
+    second: 001_BELOS_01_30
+  - first:
+      213: 8467569709600230520
+    second: 001_BELOS_01_31
+  - first:
+      213: -201870049311686158
+    second: 001_BELOS_01_32
+  - first:
+      213: 3439393475981767154
+    second: 001_BELOS_01_33
+  - first:
+      213: -945375057796418291
+    second: 001_BELOS_01_34
+  - first:
+      213: 6158810355180899432
+    second: 001_BELOS_01_35
+  - first:
+      213: -2073962281994972937
+    second: 001_BELOS_01_36
+  - first:
+      213: 9201040698600855237
+    second: 001_BELOS_01_37
+  - first:
+      213: -4478650697029568344
+    second: 001_BELOS_01_38
+  - first:
+      213: -1226035636110473121
+    second: 001_BELOS_01_39
+  - first:
+      213: 2737352466438850562
+    second: 001_BELOS_01_40
+  - first:
+      213: 3912782648807330621
+    second: 001_BELOS_01_41
+  - first:
+      213: 1200436015429637276
+    second: 001_BELOS_01_42
+  - first:
+      213: 4613583232879076795
+    second: 001_BELOS_01_43
+  - first:
+      213: -4520108908118475897
+    second: 001_BELOS_01_44
+  - first:
+      213: -7564844408808068668
+    second: 001_BELOS_01_45
+  - first:
+      213: -7753442123626624080
+    second: 001_BELOS_01_46
+  - first:
+      213: -2066910482489639902
+    second: 001_BELOS_01_47
+  - first:
+      213: -5271042704441981513
+    second: 001_BELOS_01_48
+  - first:
+      213: -4380069035753965218
+    second: 001_BELOS_01_49
+  - first:
+      213: -772456673905870834
+    second: 001_BELOS_01_50
+  - first:
+      213: -7745148705578045568
+    second: 001_BELOS_01_51
+  - first:
+      213: 1933920665155598323
+    second: 001_BELOS_01_52
+  - first:
+      213: -442109531115733605
+    second: 001_BELOS_01_53
+  - first:
+      213: -129157487307015564
+    second: 001_BELOS_01_54
+  - first:
+      213: -2105848814808289499
+    second: 001_BELOS_01_55
+  - first:
+      213: -5921409979250354698
+    second: 001_BELOS_01_56
+  - first:
+      213: 9183333143806663607
+    second: 001_BELOS_01_57
+  - first:
+      213: 4533821480935071830
+    second: 001_BELOS_01_58
+  - first:
+      213: -6308371311711750783
+    second: 001_BELOS_01_59
+  - first:
+      213: -7330626307595036796
+    second: 001_BELOS_01_60
+  - first:
+      213: -9071289400887759052
+    second: 001_BELOS_01_61
+  - first:
+      213: -7484416234396362779
+    second: 001_BELOS_01_62
+  - first:
+      213: 4611019534635926469
+    second: 001_BELOS_01_63
+  - first:
+      213: 4497417389897023965
+    second: 001_BELOS_01_64
+  - first:
+      213: 680584394815122381
+    second: 001_BELOS_01_65
+  - first:
+      213: -1354074219636433813
+    second: 001_BELOS_01_66
+  - first:
+      213: -8709520720335790800
+    second: 001_BELOS_01_67
+  - first:
+      213: -4066654061161108987
+    second: 001_BELOS_01_68
+  - first:
+      213: -1389388931400264737
+    second: 001_BELOS_01_69
+  - first:
+      213: 6409421109840094832
+    second: 001_BELOS_01_70
+  - first:
+      213: 3938996064694490989
+    second: 001_BELOS_01_71
+  - first:
+      213: 7347671210774464431
+    second: 001_BELOS_01_72
+  - first:
+      213: -7727433437972735140
+    second: 001_BELOS_01_73
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 84
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 001_BELOS_01_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc959342963682970800000000000000
+      internalID: 8730337180888160715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 098fcc83ff82352a0800000000000000
+      internalID: -6750006339863512944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_2
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4539a91093c25a30800000000000000
+      internalID: 4202636425963320650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66d6c14308509f110800000000000000
+      internalID: 1295072416033959270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d295e7d7421abd0800000000000000
+      internalID: -2620773386743632551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_5
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fd0f3a6327a11ae0800000000000000
+      internalID: -1580298223682122251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_6
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 922
+        width: 43
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145a732e8d420c280800000000000000
+      internalID: -9025173139323640511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_7
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 922
+        width: 44
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d30b408b6cb58c190800000000000000
+      internalID: -7941997033818902467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_8
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 922
+        width: 44
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06943d9266700f470800000000000000
+      internalID: 8426243038179969376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 922
+        width: 50
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b23e53abd14b500800000000000000
+      internalID: 410986151602760458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_10
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 922
+        width: 50
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cc77100e0c598a60800000000000000
+      internalID: 7676768255030557894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_11
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 922
+        width: 48
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ec2eb981cafbd900800000000000000
+      internalID: 710437075387559144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_12
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 920
+        width: 45
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9eaa96abbbb374e0800000000000000
+      internalID: -1985036596111823203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 001_BELOS_01_13
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 920
+        width: 45
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82c73d5c914ffa80800000000000000
+      internalID: -8430947837579640177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

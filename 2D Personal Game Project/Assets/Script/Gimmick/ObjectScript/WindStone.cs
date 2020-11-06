@@ -9,7 +9,7 @@ public class WindStone : MonoBehaviour
         if(collision.gameObject.CompareTag("Wind"))
         {
             transform.GetChild(0).gameObject.SetActive(true);
-            Invoke("active", 10f);
+            Invoke("active", 15f);
         }
     }
     void active()

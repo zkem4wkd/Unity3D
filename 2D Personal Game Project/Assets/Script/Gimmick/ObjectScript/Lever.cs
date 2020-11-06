@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lever : MonoBehaviour
 {
     public GameObject Downlever;
+    public GameObject trap;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.GetComponent<WeightScript>().weight > 1)
