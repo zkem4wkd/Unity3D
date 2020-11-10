@@ -100,9 +100,11 @@ ScriptsOnlyBuild:
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
     Unity.Timeline.Editor.dll:
-    - UnityEditor.Timeline.AnimationPlayableAssetInspector
+    - UnityEditor.Timeline.EditorClip
     - UnityEditor.Timeline.SequenceHierarchy
+    - UnityEditor.Timeline.TimelineAssetViewModel
     - UnityEditor.Timeline.TimelineWindow
+    - UnityEditor.Timeline.TimelineWindowTimeControl
     Unity.Timeline.dll:
     - UnityEngine.Timeline.ActivationPlayableAsset
     - UnityEngine.Timeline.ActivationTrack
@@ -140,7 +142,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/Stage1.unity:
+    Assets/Scenes/Stage1-1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -182,6 +184,10 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11444}
     - Class: 114
+      Script: {instanceID: 11890}
+    - Class: 114
+      Script: {instanceID: 11938}
+    - Class: 114
       Script: {instanceID: 12084}
     - Class: 114
       Script: {instanceID: 12138}
@@ -191,6 +197,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12508}
     - Class: 114
       Script: {instanceID: 12534}
+    - Class: 114
+      Script: {instanceID: 12762}
     - Class: 114
       Script: {instanceID: 12814}
     - Class: 114
@@ -212,6 +220,8 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14140}
     - Class: 114
+      Script: {instanceID: 14160}
+    - Class: 114
       Script: {instanceID: 14202}
     - Class: 114
       Script: {instanceID: 14230}
@@ -227,6 +237,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14930}
     - Class: 114
       Script: {instanceID: 14962}
+    - Class: 114
+      Script: {instanceID: 14964}
     - Class: 114
       Script: {instanceID: 14972}
     - Class: 114
@@ -245,6 +257,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 15930}
     - Class: 114
       Script: {instanceID: 16034}
+    - Class: 114
+      Script: {instanceID: 16060}
     - Class: 114
       Script: {instanceID: 16552}
     - Class: 114
@@ -289,7 +303,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 1839735485
       Script: {instanceID: 0}
-    Assets/Scenes/Stage2.unity:
+    Assets/Scenes/Stage1-2.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -330,6 +344,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11436}
     - Class: 114
       Script: {instanceID: 11444}
+    - Class: 114
+      Script: {instanceID: 11890}
     - Class: 114
       Script: {instanceID: 11938}
     - Class: 114
@@ -2243,6 +2259,6 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/TutorialStage.unity
   - Assets/Scenes/Story1.unity
-  - Assets/Scenes/Stage1.unity
-  - Assets/Scenes/Stage2.unity
+  - Assets/Scenes/Stage1-1.unity
+  - Assets/Scenes/Stage1-2.unity
   playerPath: "C:/Users/tj-bu/Desktop/\uC0C8 \uD3F4\uB354 (2)/2D Personal Game Project.exe"
