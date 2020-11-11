@@ -65,11 +65,16 @@
   <ItemGroup>
     <Compile Include="Assets\Script\GameManager\ButtonCoolTime.cs" />
     <Compile Include="Assets\Script\GameManager\ChangePlayer.cs" />
+    <Compile Include="Assets\Script\GameManager\DragDrop.cs" />
     <Compile Include="Assets\Script\GameManager\Portal.cs" />
     <Compile Include="Assets\Script\GameManager\TimelineTrigger.cs" />
+    <Compile Include="Assets\Script\GameManager\TowerCount.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\CandleScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\FireTrap.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\GetStoneScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\Lever.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\TeleportScript.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\TowerScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\UpDraft.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\WeightObject.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\WindStone.cs" />

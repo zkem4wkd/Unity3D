@@ -9,6 +9,9 @@ TagManager:
   - Rock
   - Wind
   - Fire
+  - Object
+  - Tower
+  - Slate
   layers:
   - Default
   - TransparentFX
