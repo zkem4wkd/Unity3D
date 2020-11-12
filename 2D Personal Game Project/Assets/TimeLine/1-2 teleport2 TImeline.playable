@@ -431,6 +431,10 @@ AnimationClip:
       value: {fileID: 0}
     - time: 2.1166666
       value: {fileID: 0}
+    - time: 2.1333334
+      value: {fileID: 0}
+    - time: 3.35
+      value: {fileID: 0}
     attribute: m_BoundingShape2D
     path: 
     classID: 114
@@ -453,12 +457,14 @@ AnimationClip:
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.1333332
+    m_StopTime: 3.3666666
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0

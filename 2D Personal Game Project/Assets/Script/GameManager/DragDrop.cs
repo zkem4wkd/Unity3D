@@ -29,7 +29,7 @@ public class DragDrop : MonoBehaviour, IDragHandler,IBeginDragHandler,IEndDragHa
         RaycastHit2D hit = Physics2D.Raycast(mousePos, Vector2.zero, 0);
         if(hit.collider.gameObject.CompareTag("Tower"))
         {
-            TowerCount pScript = GameObject.Find("GameController").GetComponent<TowerCount>();
+            TowerCount pScript = GameObject.Find("Slate").GetComponent<TowerCount>();
             Vector2 target = hit.collider.transform.position;
             Image slate = this.GetComponent<Image>();
             slate.color = new Color(0, 0, 0);

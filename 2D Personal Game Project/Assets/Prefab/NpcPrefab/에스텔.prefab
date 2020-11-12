@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2804977918369640539}
   - component: {fileID: 2804977918369640540}
   m_Layer: 0
-  m_Name: Npc1
+  m_Name: "\uC5D0\uC2A4\uD154"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

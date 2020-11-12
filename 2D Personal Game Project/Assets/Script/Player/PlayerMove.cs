@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMove : PlayerScript
 {
-    int maxJumpCount;
+    public int maxJumpCount;
     public int jumpCount;
     public int playerNumber;
     // Start is called before the first frame update

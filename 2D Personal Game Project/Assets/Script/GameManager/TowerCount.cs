@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.UI;
 
 public class TowerCount : MonoBehaviour
@@ -9,6 +10,7 @@ public class TowerCount : MonoBehaviour
     public int count;
     bool active = false;
     public Image[] slates;
+    public PlayableDirector sucessScene, failScene;
 
     private void Update()
     {
@@ -32,11 +34,12 @@ public class TowerCount : MonoBehaviour
     }
     void PlayCutscene()
     {
-        Debug.Log("1");
+        sucessScene.Play();
     }
     private void ResetSlate()
     {
-        Debug.Log("2");
+        failScene.Play();
+
         count = 0;
         towerCount = 0;
         active = false;

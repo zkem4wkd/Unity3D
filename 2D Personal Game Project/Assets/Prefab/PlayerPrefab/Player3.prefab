@@ -56,7 +56,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -2985680808648189320, guid: d3e407b13d5c0f9448f3d526850a8658,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -181,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pWeight: {fileID: 11400000, guid: d3d85ea6c37db114daec5d0597591391, type: 2}
+  weight: 0
 --- !u!114 &816527271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +198,8 @@ MonoBehaviour:
   attackObject: {fileID: 0}
   skillObject: {fileID: 4809602283932633807, guid: edd591d49c7acda4598fdb3ae0f5ec6d,
     type: 3}
+  onAttack: 0
+  onSkill: 0
 --- !u!114 &816527272
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,4 +213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerStatus: {fileID: 11400000, guid: 5b7db848b502a5141afb83e1d44f97a6, type: 2}
+  maxJumpCount: 0
+  jumpCount: 0
   playerNumber: 0

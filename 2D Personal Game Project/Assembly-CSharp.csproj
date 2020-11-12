@@ -73,8 +73,10 @@
     <Compile Include="Assets\Script\Gimmick\ObjectScript\FireTrap.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\GetStoneScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\Lever.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\OutOfWorld.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\TeleportScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\TowerScript.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\TrampolineScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\UpDraft.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\WeightObject.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\WindStone.cs" />

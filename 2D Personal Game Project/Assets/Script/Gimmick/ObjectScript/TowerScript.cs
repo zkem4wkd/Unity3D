@@ -13,7 +13,7 @@ public class TowerScript : MonoBehaviour
         {
             if (collision.GetComponent<GetStoneScript>().slateNumber == this.number)
             {
-                TowerCount pScript = GameObject.FindGameObjectWithTag("GameController").GetComponent<TowerCount>();
+                TowerCount pScript = GameObject.Find("Slate").GetComponent<TowerCount>();
                 pScript.towerCount++;
                 collision.GetComponent<BoxCollider2D>().enabled = false;
             }

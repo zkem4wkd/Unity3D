@@ -12,6 +12,7 @@ TagManager:
   - Object
   - Tower
   - Slate
+  - NPC
   layers:
   - Default
   - TransparentFX

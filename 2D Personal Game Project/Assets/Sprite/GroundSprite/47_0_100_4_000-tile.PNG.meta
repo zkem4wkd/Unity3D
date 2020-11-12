@@ -101,6 +101,816 @@ TextureImporter:
   - first:
       213: -6261030949740389146
     second: 47_0_100_4_000-tile_32
+  - first:
+      213: 7644117872860712578
+    second: 47_0_100_4_000-tile_0
+  - first:
+      213: -6583082417606520612
+    second: 47_0_100_4_000-tile_1
+  - first:
+      213: 616337026221517308
+    second: 47_0_100_4_000-tile_2
+  - first:
+      213: 8377193410528560392
+    second: 47_0_100_4_000-tile_3
+  - first:
+      213: -4705095417932439838
+    second: 47_0_100_4_000-tile_4
+  - first:
+      213: -4721208495722666723
+    second: 47_0_100_4_000-tile_5
+  - first:
+      213: 6444282004321757990
+    second: 47_0_100_4_000-tile_6
+  - first:
+      213: -1051286296885140049
+    second: 47_0_100_4_000-tile_7
+  - first:
+      213: 8615426398660241130
+    second: 47_0_100_4_000-tile_8
+  - first:
+      213: 8316849057105359566
+    second: 47_0_100_4_000-tile_9
+  - first:
+      213: 2919340411001146228
+    second: 47_0_100_4_000-tile_10
+  - first:
+      213: -3534437248890002355
+    second: 47_0_100_4_000-tile_11
+  - first:
+      213: -1068742423947463967
+    second: 47_0_100_4_000-tile_12
+  - first:
+      213: -455885703337481731
+    second: 47_0_100_4_000-tile_13
+  - first:
+      213: 3903270614805998256
+    second: 47_0_100_4_000-tile_14
+  - first:
+      213: 6354289356203524514
+    second: 47_0_100_4_000-tile_15
+  - first:
+      213: 2276816017431091581
+    second: 47_0_100_4_000-tile_16
+  - first:
+      213: -5617804973002319717
+    second: 47_0_100_4_000-tile_17
+  - first:
+      213: 5485523133561611243
+    second: 47_0_100_4_000-tile_18
+  - first:
+      213: 2756265924339412710
+    second: 47_0_100_4_000-tile_19
+  - first:
+      213: 4419447036497881845
+    second: 47_0_100_4_000-tile_20
+  - first:
+      213: 5674256766869034446
+    second: 47_0_100_4_000-tile_21
+  - first:
+      213: 2085995144418534825
+    second: 47_0_100_4_000-tile_22
+  - first:
+      213: -4115608361194540283
+    second: 47_0_100_4_000-tile_23
+  - first:
+      213: -5426344257707847263
+    second: 47_0_100_4_000-tile_24
+  - first:
+      213: -2398384611693482696
+    second: 47_0_100_4_000-tile_25
+  - first:
+      213: -1746658942959651197
+    second: 47_0_100_4_000-tile_26
+  - first:
+      213: -2541339052322900125
+    second: 47_0_100_4_000-tile_27
+  - first:
+      213: -9215003471368302564
+    second: 47_0_100_4_000-tile_28
+  - first:
+      213: -4176591876498861162
+    second: 47_0_100_4_000-tile_29
+  - first:
+      213: 5012452886175474595
+    second: 47_0_100_4_000-tile_30
+  - first:
+      213: -8872115491125241418
+    second: 47_0_100_4_000-tile_31
+  - first:
+      213: -4077561742267555184
+    second: 47_0_100_4_000-tile_32
+  - first:
+      213: -5862973860152922511
+    second: 47_0_100_4_000-tile_33
+  - first:
+      213: -1860362176388268805
+    second: 47_0_100_4_000-tile_34
+  - first:
+      213: 1595737309912000121
+    second: 47_0_100_4_000-tile_35
+  - first:
+      213: 5085558520666027123
+    second: 47_0_100_4_000-tile_36
+  - first:
+      213: -4042020240781241623
+    second: 47_0_100_4_000-tile_37
+  - first:
+      213: 5127129332886106100
+    second: 47_0_100_4_000-tile_38
+  - first:
+      213: 7033769777505280699
+    second: 47_0_100_4_000-tile_39
+  - first:
+      213: -8729222452481116635
+    second: 47_0_100_4_000-tile_40
+  - first:
+      213: 4007530852769792698
+    second: 47_0_100_4_000-tile_41
+  - first:
+      213: 9025616912149718334
+    second: 47_0_100_4_000-tile_42
+  - first:
+      213: -3299807991425779101
+    second: 47_0_100_4_000-tile_43
+  - first:
+      213: 2047354470070223705
+    second: 47_0_100_4_000-tile_44
+  - first:
+      213: 1226740266121753723
+    second: 47_0_100_4_000-tile_45
+  - first:
+      213: -7404353255660183912
+    second: 47_0_100_4_000-tile_46
+  - first:
+      213: -743427284076298279
+    second: 47_0_100_4_000-tile_47
+  - first:
+      213: -966910315442849760
+    second: 47_0_100_4_000-tile_48
+  - first:
+      213: -418956844171626219
+    second: 47_0_100_4_000-tile_49
+  - first:
+      213: -5438145712092310458
+    second: 47_0_100_4_000-tile_50
+  - first:
+      213: 279712976846050130
+    second: 47_0_100_4_000-tile_51
+  - first:
+      213: -734482134156080711
+    second: 47_0_100_4_000-tile_52
+  - first:
+      213: -8846042469632929094
+    second: 47_0_100_4_000-tile_53
+  - first:
+      213: -2325722148502720800
+    second: 47_0_100_4_000-tile_54
+  - first:
+      213: -3540075150726784276
+    second: 47_0_100_4_000-tile_55
+  - first:
+      213: 8708122305919703885
+    second: 47_0_100_4_000-tile_56
+  - first:
+      213: -1193215733833602506
+    second: 47_0_100_4_000-tile_57
+  - first:
+      213: -3614978943456547099
+    second: 47_0_100_4_000-tile_58
+  - first:
+      213: -6316716540712837372
+    second: 47_0_100_4_000-tile_59
+  - first:
+      213: 3849779443704266191
+    second: 47_0_100_4_000-tile_60
+  - first:
+      213: -1307442593960731633
+    second: 47_0_100_4_000-tile_61
+  - first:
+      213: 2279933786857698696
+    second: 47_0_100_4_000-tile_62
+  - first:
+      213: -3229723550504233119
+    second: 47_0_100_4_000-tile_63
+  - first:
+      213: 6284722503938237156
+    second: 47_0_100_4_000-tile_64
+  - first:
+      213: -4691850181140918321
+    second: 47_0_100_4_000-tile_65
+  - first:
+      213: -7402847800068993263
+    second: 47_0_100_4_000-tile_66
+  - first:
+      213: 3055251343941003546
+    second: 47_0_100_4_000-tile_67
+  - first:
+      213: 3721011650480377862
+    second: 47_0_100_4_000-tile_68
+  - first:
+      213: 1716447801653804698
+    second: 47_0_100_4_000-tile_69
+  - first:
+      213: -5534938966627420980
+    second: 47_0_100_4_000-tile_70
+  - first:
+      213: -1191638607192157765
+    second: 47_0_100_4_000-tile_71
+  - first:
+      213: 1314895717910240744
+    second: 47_0_100_4_000-tile_72
+  - first:
+      213: 7863528324821479737
+    second: 47_0_100_4_000-tile_73
+  - first:
+      213: -8842567144073018064
+    second: 47_0_100_4_000-tile_74
+  - first:
+      213: -2638784632848939721
+    second: 47_0_100_4_000-tile_75
+  - first:
+      213: -8756205500595259243
+    second: 47_0_100_4_000-tile_76
+  - first:
+      213: -5335676581180650044
+    second: 47_0_100_4_000-tile_77
+  - first:
+      213: 3868770874025134098
+    second: 47_0_100_4_000-tile_78
+  - first:
+      213: -7771301267829806246
+    second: 47_0_100_4_000-tile_79
+  - first:
+      213: -481420060073573534
+    second: 47_0_100_4_000-tile_80
+  - first:
+      213: -3042477274892631948
+    second: 47_0_100_4_000-tile_81
+  - first:
+      213: 3822134822129816296
+    second: 47_0_100_4_000-tile_82
+  - first:
+      213: -7784395181786448688
+    second: 47_0_100_4_000-tile_83
+  - first:
+      213: -7276940099798496300
+    second: 47_0_100_4_000-tile_84
+  - first:
+      213: -5753803132453631802
+    second: 47_0_100_4_000-tile_85
+  - first:
+      213: 4667947491521862918
+    second: 47_0_100_4_000-tile_86
+  - first:
+      213: 8370967926173759329
+    second: 47_0_100_4_000-tile_87
+  - first:
+      213: 4483350098545485968
+    second: 47_0_100_4_000-tile_88
+  - first:
+      213: 3069640124656138685
+    second: 47_0_100_4_000-tile_89
+  - first:
+      213: -4943118496505616760
+    second: 47_0_100_4_000-tile_90
+  - first:
+      213: -2833765251460682609
+    second: 47_0_100_4_000-tile_91
+  - first:
+      213: 8217541861022879655
+    second: 47_0_100_4_000-tile_92
+  - first:
+      213: 7241975086539185042
+    second: 47_0_100_4_000-tile_93
+  - first:
+      213: -8123852367591599779
+    second: 47_0_100_4_000-tile_94
+  - first:
+      213: -7735869557500016511
+    second: 47_0_100_4_000-tile_95
+  - first:
+      213: -5722899989927303128
+    second: 47_0_100_4_000-tile_96
+  - first:
+      213: -3161129662696503990
+    second: 47_0_100_4_000-tile_97
+  - first:
+      213: 3809318208815142233
+    second: 47_0_100_4_000-tile_98
+  - first:
+      213: 5101851813437418294
+    second: 47_0_100_4_000-tile_99
+  - first:
+      213: 3486026300041417598
+    second: 47_0_100_4_000-tile_100
+  - first:
+      213: 8604093807714640426
+    second: 47_0_100_4_000-tile_101
+  - first:
+      213: -6338772807277133326
+    second: 47_0_100_4_000-tile_102
+  - first:
+      213: 9178058096024269586
+    second: 47_0_100_4_000-tile_103
+  - first:
+      213: 4195624849669599837
+    second: 47_0_100_4_000-tile_104
+  - first:
+      213: 852448557911270534
+    second: 47_0_100_4_000-tile_105
+  - first:
+      213: 730180630197262318
+    second: 47_0_100_4_000-tile_106
+  - first:
+      213: 3539115639563663003
+    second: 47_0_100_4_000-tile_107
+  - first:
+      213: -2947056939611091633
+    second: 47_0_100_4_000-tile_108
+  - first:
+      213: -4208105223007424836
+    second: 47_0_100_4_000-tile_109
+  - first:
+      213: -1782424920894167457
+    second: 47_0_100_4_000-tile_110
+  - first:
+      213: -8565735278938962375
+    second: 47_0_100_4_000-tile_111
+  - first:
+      213: -533048106022878048
+    second: 47_0_100_4_000-tile_112
+  - first:
+      213: 3794230604402727839
+    second: 47_0_100_4_000-tile_113
+  - first:
+      213: -3081966837603680990
+    second: 47_0_100_4_000-tile_114
+  - first:
+      213: 8788589666414734995
+    second: 47_0_100_4_000-tile_115
+  - first:
+      213: 177653609071951531
+    second: 47_0_100_4_000-tile_116
+  - first:
+      213: 8002299667797814224
+    second: 47_0_100_4_000-tile_117
+  - first:
+      213: 6092574532885344584
+    second: 47_0_100_4_000-tile_118
+  - first:
+      213: 794944759280738781
+    second: 47_0_100_4_000-tile_119
+  - first:
+      213: -4199078925641585426
+    second: 47_0_100_4_000-tile_120
+  - first:
+      213: 5654965734071180653
+    second: 47_0_100_4_000-tile_121
+  - first:
+      213: 6239328008296823924
+    second: 47_0_100_4_000-tile_122
+  - first:
+      213: 8074900576994397961
+    second: 47_0_100_4_000-tile_123
+  - first:
+      213: -612227792872817460
+    second: 47_0_100_4_000-tile_124
+  - first:
+      213: 2985844308367015156
+    second: 47_0_100_4_000-tile_125
+  - first:
+      213: 6998915366816760053
+    second: 47_0_100_4_000-tile_126
+  - first:
+      213: 7520508186390977915
+    second: 47_0_100_4_000-tile_127
+  - first:
+      213: -7519480500466548940
+    second: 47_0_100_4_000-tile_128
+  - first:
+      213: 7081112093300556216
+    second: 47_0_100_4_000-tile_129
+  - first:
+      213: 5719093771095367630
+    second: 47_0_100_4_000-tile_130
+  - first:
+      213: 2668601931407964784
+    second: 47_0_100_4_000-tile_131
+  - first:
+      213: 950058007224217481
+    second: 47_0_100_4_000-tile_132
+  - first:
+      213: -1399644607066079532
+    second: 47_0_100_4_000-tile_133
+  - first:
+      213: -5071547767646237694
+    second: 47_0_100_4_000-tile_134
+  - first:
+      213: -5999382105107502884
+    second: 47_0_100_4_000-tile_135
+  - first:
+      213: 1224512222355717404
+    second: 47_0_100_4_000-tile_136
+  - first:
+      213: 6620930211715646889
+    second: 47_0_100_4_000-tile_137
+  - first:
+      213: 8756349729102207418
+    second: 47_0_100_4_000-tile_138
+  - first:
+      213: -7505753381358503603
+    second: 47_0_100_4_000-tile_139
+  - first:
+      213: 4955434955164456756
+    second: 47_0_100_4_000-tile_140
+  - first:
+      213: -121196669014969619
+    second: 47_0_100_4_000-tile_141
+  - first:
+      213: -5229278203655333354
+    second: 47_0_100_4_000-tile_142
+  - first:
+      213: -7421977441048128653
+    second: 47_0_100_4_000-tile_143
+  - first:
+      213: -4886216715715343917
+    second: 47_0_100_4_000-tile_144
+  - first:
+      213: -1986147520101741124
+    second: 47_0_100_4_000-tile_145
+  - first:
+      213: -1814261816268595823
+    second: 47_0_100_4_000-tile_146
+  - first:
+      213: -3077036546493095571
+    second: 47_0_100_4_000-tile_147
+  - first:
+      213: -3975877679767839048
+    second: 47_0_100_4_000-tile_148
+  - first:
+      213: 5294756473196096587
+    second: 47_0_100_4_000-tile_149
+  - first:
+      213: 2553165811936472117
+    second: 47_0_100_4_000-tile_150
+  - first:
+      213: 6686456902291945510
+    second: 47_0_100_4_000-tile_151
+  - first:
+      213: -4153049387168257922
+    second: 47_0_100_4_000-tile_152
+  - first:
+      213: 4801543279085672661
+    second: 47_0_100_4_000-tile_153
+  - first:
+      213: -1656365345214086720
+    second: 47_0_100_4_000-tile_154
+  - first:
+      213: -4445373005821485837
+    second: 47_0_100_4_000-tile_155
+  - first:
+      213: 9130324919137263431
+    second: 47_0_100_4_000-tile_156
+  - first:
+      213: 9061945581612947991
+    second: 47_0_100_4_000-tile_157
+  - first:
+      213: 8105253773146299212
+    second: 47_0_100_4_000-tile_158
+  - first:
+      213: -3238661531971321047
+    second: 47_0_100_4_000-tile_159
+  - first:
+      213: -8824193740564199913
+    second: 47_0_100_4_000-tile_160
+  - first:
+      213: 7672779772102217765
+    second: 47_0_100_4_000-tile_161
+  - first:
+      213: -4616891782054077880
+    second: 47_0_100_4_000-tile_162
+  - first:
+      213: 3572843591431829569
+    second: 47_0_100_4_000-tile_163
+  - first:
+      213: 1622037389724870038
+    second: 47_0_100_4_000-tile_164
+  - first:
+      213: 1467562406978694447
+    second: 47_0_100_4_000-tile_165
+  - first:
+      213: -316618879342266668
+    second: 47_0_100_4_000-tile_166
+  - first:
+      213: -999627372992290109
+    second: 47_0_100_4_000-tile_167
+  - first:
+      213: 466050387069454027
+    second: 47_0_100_4_000-tile_168
+  - first:
+      213: 8158647136694568221
+    second: 47_0_100_4_000-tile_169
+  - first:
+      213: -4831072997736275508
+    second: 47_0_100_4_000-tile_170
+  - first:
+      213: -2695874707583180463
+    second: 47_0_100_4_000-tile_171
+  - first:
+      213: 1230755680608557621
+    second: 47_0_100_4_000-tile_172
+  - first:
+      213: 8102752182176928671
+    second: 47_0_100_4_000-tile_173
+  - first:
+      213: 9130550413367014418
+    second: 47_0_100_4_000-tile_174
+  - first:
+      213: -6029452177848718624
+    second: 47_0_100_4_000-tile_175
+  - first:
+      213: 1260269577112416426
+    second: 47_0_100_4_000-tile_176
+  - first:
+      213: 7315535458660614636
+    second: 47_0_100_4_000-tile_177
+  - first:
+      213: -4782182951257898020
+    second: 47_0_100_4_000-tile_178
+  - first:
+      213: 7831377473588786104
+    second: 47_0_100_4_000-tile_179
+  - first:
+      213: 84289815595275760
+    second: 47_0_100_4_000-tile_180
+  - first:
+      213: -5567414283202296661
+    second: 47_0_100_4_000-tile_181
+  - first:
+      213: 7758040960201098540
+    second: 47_0_100_4_000-tile_182
+  - first:
+      213: 6509014047045934464
+    second: 47_0_100_4_000-tile_183
+  - first:
+      213: -6002546614292380997
+    second: 47_0_100_4_000-tile_184
+  - first:
+      213: 111992412760659089
+    second: 47_0_100_4_000-tile_185
+  - first:
+      213: -6836833693249009968
+    second: 47_0_100_4_000-tile_186
+  - first:
+      213: -5863707007909843992
+    second: 47_0_100_4_000-tile_187
+  - first:
+      213: 8173616011828694109
+    second: 47_0_100_4_000-tile_188
+  - first:
+      213: 2371179424247224213
+    second: 47_0_100_4_000-tile_189
+  - first:
+      213: 5176759981912435332
+    second: 47_0_100_4_000-tile_190
+  - first:
+      213: 6584741827765026946
+    second: 47_0_100_4_000-tile_191
+  - first:
+      213: -6924979705666450087
+    second: 47_0_100_4_000-tile_192
+  - first:
+      213: -7765355798548458374
+    second: 47_0_100_4_000-tile_193
+  - first:
+      213: 3686208215672287946
+    second: 47_0_100_4_000-tile_194
+  - first:
+      213: -4165850691251361897
+    second: 47_0_100_4_000-tile_195
+  - first:
+      213: -3428152205467968863
+    second: 47_0_100_4_000-tile_196
+  - first:
+      213: -5622422858673038126
+    second: 47_0_100_4_000-tile_197
+  - first:
+      213: -4237727189682472821
+    second: 47_0_100_4_000-tile_198
+  - first:
+      213: 3290239630102270350
+    second: 47_0_100_4_000-tile_199
+  - first:
+      213: -5848308074152731962
+    second: 47_0_100_4_000-tile_200
+  - first:
+      213: 1251125863449340032
+    second: 47_0_100_4_000-tile_201
+  - first:
+      213: -8093812366471750264
+    second: 47_0_100_4_000-tile_202
+  - first:
+      213: -4475641249202894418
+    second: 47_0_100_4_000-tile_203
+  - first:
+      213: 5832329756445609299
+    second: 47_0_100_4_000-tile_204
+  - first:
+      213: -8203708037363626605
+    second: 47_0_100_4_000-tile_205
+  - first:
+      213: -2255569839620044639
+    second: 47_0_100_4_000-tile_206
+  - first:
+      213: -3461955801480162695
+    second: 47_0_100_4_000-tile_207
+  - first:
+      213: 6807815351963744274
+    second: 47_0_100_4_000-tile_208
+  - first:
+      213: 7681284741885222583
+    second: 47_0_100_4_000-tile_209
+  - first:
+      213: 5612263347360731064
+    second: 47_0_100_4_000-tile_210
+  - first:
+      213: -6148997703798642502
+    second: 47_0_100_4_000-tile_211
+  - first:
+      213: 9140065792309250977
+    second: 47_0_100_4_000-tile_212
+  - first:
+      213: -7912394030849937042
+    second: 47_0_100_4_000-tile_213
+  - first:
+      213: -6819788182555711394
+    second: 47_0_100_4_000-tile_214
+  - first:
+      213: -2155272026375754417
+    second: 47_0_100_4_000-tile_215
+  - first:
+      213: -8349563131454218856
+    second: 47_0_100_4_000-tile_216
+  - first:
+      213: -6379792887960175188
+    second: 47_0_100_4_000-tile_217
+  - first:
+      213: -3580851523827043102
+    second: 47_0_100_4_000-tile_218
+  - first:
+      213: -8380359114613111969
+    second: 47_0_100_4_000-tile_219
+  - first:
+      213: 6255441221285022091
+    second: 47_0_100_4_000-tile_220
+  - first:
+      213: -8713915978010151660
+    second: 47_0_100_4_000-tile_221
+  - first:
+      213: 3024992885536329217
+    second: 47_0_100_4_000-tile_222
+  - first:
+      213: -8027676384591164717
+    second: 47_0_100_4_000-tile_223
+  - first:
+      213: -1984875498154245454
+    second: 47_0_100_4_000-tile_224
+  - first:
+      213: 5546156494318144223
+    second: 47_0_100_4_000-tile_225
+  - first:
+      213: -2122090838885291200
+    second: 47_0_100_4_000-tile_226
+  - first:
+      213: -5499166317198180524
+    second: 47_0_100_4_000-tile_227
+  - first:
+      213: 6376300221600309936
+    second: 47_0_100_4_000-tile_228
+  - first:
+      213: 5658624219048507547
+    second: 47_0_100_4_000-tile_229
+  - first:
+      213: -48872661188578241
+    second: 47_0_100_4_000-tile_230
+  - first:
+      213: -5498268654880204644
+    second: 47_0_100_4_000-tile_231
+  - first:
+      213: -8380804519506394944
+    second: 47_0_100_4_000-tile_232
+  - first:
+      213: -1593784003493046517
+    second: 47_0_100_4_000-tile_233
+  - first:
+      213: 3918477921155689085
+    second: 47_0_100_4_000-tile_234
+  - first:
+      213: -4111989557188590516
+    second: 47_0_100_4_000-tile_235
+  - first:
+      213: 7536311348800744072
+    second: 47_0_100_4_000-tile_236
+  - first:
+      213: 7984757444305020360
+    second: 47_0_100_4_000-tile_237
+  - first:
+      213: -3126062690462605438
+    second: 47_0_100_4_000-tile_238
+  - first:
+      213: -5996237556476512548
+    second: 47_0_100_4_000-tile_239
+  - first:
+      213: 6624285582940436583
+    second: 47_0_100_4_000-tile_240
+  - first:
+      213: 5326989454074023262
+    second: 47_0_100_4_000-tile_241
+  - first:
+      213: -8973478088074585128
+    second: 47_0_100_4_000-tile_242
+  - first:
+      213: -7063143902795568621
+    second: 47_0_100_4_000-tile_243
+  - first:
+      213: 3400982291113566039
+    second: 47_0_100_4_000-tile_244
+  - first:
+      213: 4741442568131606004
+    second: 47_0_100_4_000-tile_245
+  - first:
+      213: 7957518878291407325
+    second: 47_0_100_4_000-tile_246
+  - first:
+      213: -6048774513844592955
+    second: 47_0_100_4_000-tile_247
+  - first:
+      213: -3149044292766785253
+    second: 47_0_100_4_000-tile_248
+  - first:
+      213: 3995735746403787942
+    second: 47_0_100_4_000-tile_249
+  - first:
+      213: 5211054720871321090
+    second: 47_0_100_4_000-tile_250
+  - first:
+      213: -6685281699615776653
+    second: 47_0_100_4_000-tile_251
+  - first:
+      213: 2599494537401335569
+    second: 47_0_100_4_000-tile_252
+  - first:
+      213: 2028615178750319356
+    second: 47_0_100_4_000-tile_253
+  - first:
+      213: 151366410417417249
+    second: 47_0_100_4_000-tile_254
+  - first:
+      213: -5376597942123551391
+    second: 47_0_100_4_000-tile_255
+  - first:
+      213: 7091216073413039245
+    second: 47_0_100_4_000-tile_256
+  - first:
+      213: -5798585146354122797
+    second: 47_0_100_4_000-tile_257
+  - first:
+      213: -4280566769387235868
+    second: 47_0_100_4_000-tile_258
+  - first:
+      213: 2935860700334632391
+    second: 47_0_100_4_000-tile_259
+  - first:
+      213: -6182265455008732073
+    second: 47_0_100_4_000-tile_260
+  - first:
+      213: 685194181365142470
+    second: 47_0_100_4_000-tile_261
+  - first:
+      213: -6815865161646966606
+    second: 47_0_100_4_000-tile_262
+  - first:
+      213: -9120814477472949910
+    second: 47_0_100_4_000-tile_263
+  - first:
+      213: -3363766209402437602
+    second: 47_0_100_4_000-tile_264
+  - first:
+      213: 8632106349773926855
+    second: 47_0_100_4_000-tile_265
+  - first:
+      213: -859945770203008211
+    second: 47_0_100_4_000-tile_266
+  - first:
+      213: -8638548402520574107
+    second: 47_0_100_4_000-tile_267
+  - first:
+      213: -6011778147579899335
+    second: 47_0_100_4_000-tile_268
+  - first:
+      213: 6126729660382735522
+    second: 47_0_100_4_000-tile_269
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -144,7 +954,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 84
+  spritePixelsToUnits: 124
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -213,19 +1023,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_0
       rect:
         serializedVersion: 2
-        x: 221
-        y: 1724
-        width: 70
-        height: 135
+        x: 161
+        y: 1727
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 367ea17b596bd5850800000000000000
-      internalID: 6367446202310125411
+      spriteID: 28ec31184bc551a60800000000000000
+      internalID: 7644117872860712578
       vertices: []
       indices: 
       edges: []
@@ -234,40 +1044,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_1
       rect:
         serializedVersion: 2
-        x: 734
-        y: 1724
-        width: 70
-        height: 135
+        x: 736
+        y: 1726
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 841f7dfa2ef1a9c60800000000000000
-      internalID: 7825602360982892872
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_2
-      rect:
-        serializedVersion: 2
-        x: 1214
-        y: 1724
-        width: 132
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 273c17486cfefdf60800000000000000
-      internalID: 8061425493921088370
+      spriteID: cd0917b7b6134a4a0800000000000000
+      internalID: -6583082417606520612
       vertices: []
       indices: 
       edges: []
@@ -276,61 +1065,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_3
       rect:
         serializedVersion: 2
-        x: 1724
-        y: 1724
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1216
+        y: 1728
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5094347, y: 0.5047169}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19ac6847edee57230800000000000000
-      internalID: 3636074913376684689
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_4
-      rect:
-        serializedVersion: 2
-        x: 2236
-        y: 1724
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b413389181ccfed00800000000000000
-      internalID: 1004245645806219595
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_5
-      rect:
-        serializedVersion: 2
-        x: 2784
-        y: 1762
-        width: 67
-        height: 65
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 78c8fb8b54ce0a0f0800000000000000
-      internalID: -1107625724136682361
+      spriteID: 8054c49c505c14470800000000000000
+      internalID: 8377193410528560392
       vertices: []
       indices: 
       edges: []
@@ -339,40 +1086,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_6
       rect:
         serializedVersion: 2
-        x: 3261
-        y: 1759
-        width: 135
-        height: 68
+        x: 1727
+        y: 1728
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a07f17100f5675530800000000000000
-      internalID: 3843652888474810122
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_7
-      rect:
-        serializedVersion: 2
-        x: 3804
-        y: 1764
-        width: 70
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ee8a2684159cfc810800000000000000
-      internalID: 1787868928033335534
+      spriteID: 62b6a04f650be6950800000000000000
+      internalID: 6444282004321757990
       vertices: []
       indices: 
       edges: []
@@ -381,19 +1107,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_8
       rect:
         serializedVersion: 2
-        x: 4319
-        y: 1724
-        width: 67
-        height: 123
+        x: 2240
+        y: 1728
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdb57b93645a425f0800000000000000
-      internalID: -782318714221012005
+      spriteID: ae6aaa0c9a4209770800000000000000
+      internalID: 8615426398660241130
       vertices: []
       indices: 
       edges: []
@@ -402,40 +1128,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_9
       rect:
         serializedVersion: 2
-        x: 4829
-        y: 1724
-        width: 70
-        height: 125
+        x: 2720
+        y: 1696
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 549d8cf5617706fc0800000000000000
-      internalID: -3503669572114261691
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_10
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 1212
-        width: 135
-        height: 125
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4733119f258a3da60800000000000000
-      internalID: 7697681262425748340
+      spriteID: ec2be4327226b6370800000000000000
+      internalID: 8316849057105359566
       vertices: []
       indices: 
       edges: []
@@ -444,40 +1149,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_11
       rect:
         serializedVersion: 2
-        x: 701
-        y: 1212
-        width: 135
-        height: 125
+        x: 3264
+        y: 1696
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7a36da1e2fb94e80800000000000000
-      internalID: -8193807842284258693
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_12
-      rect:
-        serializedVersion: 2
-        x: 1244
-        y: 1212
-        width: 72
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b99ad6b522b5fa7f0800000000000000
-      internalID: -599160022296057445
+      spriteID: d44a0036c0823fec0800000000000000
+      internalID: -3534437248890002355
       vertices: []
       indices: 
       edges: []
@@ -486,40 +1170,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_13
       rect:
         serializedVersion: 2
-        x: 1756
-        y: 1212
-        width: 70
-        height: 135
+        x: 3808
+        y: 1695
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4465aaf38f8527260800000000000000
-      internalID: 7093830186305214020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_14
-      rect:
-        serializedVersion: 2
-        x: 2236
-        y: 1212
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 07f325c380721dd20800000000000000
-      internalID: 3301462918164529008
+      spriteID: df9e3624e5e5ca9f0800000000000000
+      internalID: -455885703337481731
       vertices: []
       indices: 
       edges: []
@@ -528,19 +1191,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_15
       rect:
         serializedVersion: 2
-        x: 2749
-        y: 1212
-        width: 135
-        height: 135
+        x: 4257
+        y: 1728
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a48691cb647ffb9e0800000000000000
-      internalID: -1603291059145054134
+      spriteID: 2a18e84c088fe2850800000000000000
+      internalID: 6354289356203524514
       vertices: []
       indices: 
       edges: []
@@ -549,271 +1212,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_16
       rect:
         serializedVersion: 2
-        x: 3261
-        y: 1212
-        width: 135
-        height: 135
+        x: 4832
+        y: 1728
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4a239540010a0490800000000000000
-      internalID: -7779404305650210230
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_17
-      rect:
-        serializedVersion: 2
-        x: 3774
-        y: 1212
-        width: 132
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: daf50ab879d1f35f0800000000000000
-      internalID: -774868074164625491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_18
-      rect:
-        serializedVersion: 2
-        x: 4221
-        y: 1149
-        width: 263
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b719a986f9248e40800000000000000
-      internalID: 5657693170732439473
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_19
-      rect:
-        serializedVersion: 2
-        x: 4734
-        y: 1149
-        width: 262
-        height: 248
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02714d9f700324260800000000000000
-      internalID: 7080274374994171680
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_20
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 701
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 370c439e81a32f3a0800000000000000
-      internalID: -6633175422497144717
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_21
-      rect:
-        serializedVersion: 2
-        x: 701
-        y: 701
-        width: 135
-        height: 135
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9e0da23222593040800000000000000
-      internalID: 4627820398932463259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_22
-      rect:
-        serializedVersion: 2
-        x: 1249
-        y: 735
-        width: 67
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6327326bdf770b240800000000000000
-      internalID: 4805472733970526774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_23
-      rect:
-        serializedVersion: 2
-        x: 1724
-        y: 734
-        width: 135
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2234e2fcbf90d9fa0800000000000000
-      internalID: -5792462568611232990
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_24
-      rect:
-        serializedVersion: 2
-        x: 2269
-        y: 735
-        width: 70
-        height: 69
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 13b8dcb6e9647f790800000000000000
-      internalID: -7496445408507491535
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_25
-      rect:
-        serializedVersion: 2
-        x: 2559
-        y: 509
-        width: 505
-        height: 392
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8308d7098a28c8800800000000000000
-      internalID: 616010909533175864
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_26
-      rect:
-        serializedVersion: 2
-        x: 3276
-        y: 734
-        width: 120
-        height: 70
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b7b8ea7bba31bcc0800000000000000
-      internalID: -3697109242199099472
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_27
-      rect:
-        serializedVersion: 2
-        x: 3719
-        y: 716
-        width: 252
-        height: 120
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a98bf4e6a599a020800000000000000
-      internalID: 2353576824316594596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_28
-      rect:
-        serializedVersion: 2
-        x: 4124
-        y: 532
-        width: 455
-        height: 322
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d97231cd6f922e40800000000000000
-      internalID: 5630237777908103638
+      spriteID: d7956e1da10e89f10800000000000000
+      internalID: 2276816017431091581
       vertices: []
       indices: 
       edges: []
@@ -822,40 +1233,19 @@ TextureImporter:
       name: 47_0_100_4_000-tile_29
       rect:
         serializedVersion: 2
-        x: 4734
-        y: 652
-        width: 262
-        height: 154
+        x: 192
+        y: 1215
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4de4344a38056f370800000000000000
-      internalID: 8355954684959346388
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: 47_0_100_4_000-tile_30
-      rect:
-        serializedVersion: 2
-        x: 221
-        y: 189
-        width: 70
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d3766a23fd697e80800000000000000
-      internalID: -8180386356985957423
+      spriteID: 693d08d11d3c906c0800000000000000
+      internalID: -4176591876498861162
       vertices: []
       indices: 
       edges: []
@@ -864,40 +1254,418 @@ TextureImporter:
       name: 47_0_100_4_000-tile_31
       rect:
         serializedVersion: 2
-        x: 734
-        y: 189
-        width: 70
-        height: 124
+        x: 703
+        y: 1216
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51d088658b42a1e10800000000000000
-      internalID: 2169086544676654357
+      spriteID: 6b95d31a7f9efd480800000000000000
+      internalID: -8872115491125241418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 47_0_100_4_000-tile_32
+      name: 47_0_100_4_000-tile_44
       rect:
         serializedVersion: 2
-        x: 1214
-        y: 189
-        width: 132
-        height: 122
+        x: 3775
+        y: 1216
+        width: 128
+        height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ec5ff806895c19a0800000000000000
-      internalID: -6261030949740389146
+      spriteID: 95308dd0b0aa96c10800000000000000
+      internalID: 2047354470070223705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_45
+      rect:
+        serializedVersion: 2
+        x: 4735
+        y: 1153
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b74fad1c5c1460110800000000000000
+      internalID: 1226740266121753723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_82
+      rect:
+        serializedVersion: 2
+        x: 2548
+        y: 513
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2d2b4ce53fa0530800000000000000
+      internalID: 3822134822129816296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_85
+      rect:
+        serializedVersion: 2
+        x: 3266
+        y: 735
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8429639826620b0800000000000000
+      internalID: -5753803132453631802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_87
+      rect:
+        serializedVersion: 2
+        x: 3707
+        y: 575
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16776c14af6ab2470800000000000000
+      internalID: 8370967926173759329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_96
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 702
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.53277826, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828eb47c7cc2490b0800000000000000
+      internalID: -5722899989927303128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_98
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 671
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9559ad07aba6dd430800000000000000
+      internalID: 3809318208815142233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_100
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 672
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7353ab337ad06030800000000000000
+      internalID: 3486026300041417598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_102
+      rect:
+        serializedVersion: 2
+        x: 2271
+        y: 672
+        width: 124
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f1475e47b72808a0800000000000000
+      internalID: -6338772807277133326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_127
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 191
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d5044a9563e5860800000000000000
+      internalID: 7520508186390977915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_128
+      rect:
+        serializedVersion: 2
+        x: 735
+        y: 190
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43ff632235075a790800000000000000
+      internalID: -7519480500466548940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_134
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 191
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5000002}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20c4500fc2e3e99b0800000000000000
+      internalID: -5071547767646237694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_2
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 1216
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9aad5824bad8800800000000000000
+      internalID: 616337026221517308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_4
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 1216
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee91d365a424beb0800000000000000
+      internalID: -4705095417932439838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_5
+      rect:
+        serializedVersion: 2
+        x: 2241
+        y: 1216
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15e4ed13e5ea7eb0800000000000000
+      internalID: -4721208495722666723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_7
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 1216
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5ece4dea41961f0800000000000000
+      internalID: -1051286296885140049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_10
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 1215
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47b8a20f2a4938820800000000000000
+      internalID: 2919340411001146228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_12
+      rect:
+        serializedVersion: 2
+        x: 4225
+        y: 1151
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e2b8388d601b21f0800000000000000
+      internalID: -1068742423947463967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 47_0_100_4_000-tile_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 705
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba6bb991f33b2630800000000000000
+      internalID: 3903270614805998256
       vertices: []
       indices: 
       edges: []
