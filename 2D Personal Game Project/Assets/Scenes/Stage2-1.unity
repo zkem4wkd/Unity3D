@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -488,8 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB0A0\uB3C4 \uC800\uBB3C\uC5C8\uACE0 .. \uC55E\uC73C\uB85C \uAC08 \uC218\uB3C4
-    \uC5C6\uC796\uC544.."
+  m_text: "\uC815\uB9D0 \uC18D\uD3B8\uD558\uC2DC\uB124\uC694."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -777,7 +776,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4df31b0080d6fb646be5071ebdbf2b5c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -879,7 +878,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "... \uADF8\uB0E5 \uB3CC\uC544\uAC00\uACE0\uC2F6\uC5B4 .."
+  m_text: "\uB204\uAC00 \uC774\uB7F0\uACF3\uC5D0 \uD2B8\uB7A8\uD384\uB9B0\uC744 \uB194\uB454\uAC78\uAE4C\uC694...?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -1570,7 +1569,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "(\uC544\uAE4C\uB294 \uBAA8\uB978\uB2E4\uACE0 \uD558\uC9C0 \uC54A\uC558\uB098..?)"
+  m_text: "\uAD11\uC0B0\uAC00\uB294\uAE38\uC774 \uC5EC\uAE30\uAC00 \uB9DE\uC544\uC694?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -2248,8 +2247,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB098 \uC815\uB3C4 \uAE38\uC744 \uD574\uB9F8\uC73C\uBA74 \uADF8\uB7F0\uACF3\uC758
-    \uC704\uCE58\uCBE4\uC740 \uBAA8\uB450 \uBA38\uB9BF\uC18D\uC5D0 \uC800\uC7A5\uB418\uC5B4\uC788\uC5B4."
+  m_text: "\uADF8\uB7F0\uAC74 \uC911\uC694\uD558\uC9C0\uC54A\uC544. \uAC74\uB108\uD3B8\uC73C\uB85C
+    \uAC08 \uC218 \uC788\uB294 \uBC29\uBC95\uC774 \uC788\uB2E4\uB294\uAC70\uC9C0."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -3489,7 +3488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC774\uC0C1\uD55C\uC774\uB984\uC774\uB124\uC694. \uC800\uB294 \uB9C8\uC5D0\uC5D0\uC694!"
+  m_text: "\uC5B4\uB5BB\uAC8C \uAC74\uB108\uAC08\uBC29\uBC95\uC774 \uC5C6\uC744\uAE4C\uC694?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -4247,6 +4246,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   charge: {fileID: 4473842105957943057, guid: 28f54a931f530f246a4cdbad2effc8dd, type: 3}
+  forceX: 20
+  forceY: 5
 --- !u!1 &871975212
 GameObject:
   m_ObjectHideFlags: 0
@@ -5486,7 +5487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC5ED\uC2DC \uB098\uC758 \uAE30\uB2E4\uB9BC\uC740 \uD2C0\uB9AC\uC9C0\uC54A\uC558\uC5B4."
+  m_text: "\uB09C \uB2E4\uB978\uAE38\uC740 \uBAB0\uB77C."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -7553,8 +7554,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uC7A1\uB2F4\uC740 \uC5EC\uAE30\uAE4C\uC9C0. \uB0A0\uC774 \uC800\uBB3C\uC5B4\uBC84\uB9AC\uAE30
-    \uC804\uC5D0 \uC5B4\uC11C \uC62C\uB77C\uAC00\uC790."
+  m_text: "\uC800 \uAC74\uB108\uD3B8\uC774 \uAD11\uC0B0\uC774\uC57C."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -8247,8 +8247,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uB0B4\uAC00 \uAD11\uC0B0\uAE4C\uC9C0 \uC548\uB0B4\uD574\uC904\uAC8C \uB108\uB294
-    \uADF8 \uD6C4\uC5D0 \uB098\uB97C \uB9C8\uC744\uB85C \uB370\uB824\uB2E4\uC918."
+  m_text: "\uC7A1\uB2F4\uC740 \uC5EC\uAE30\uAE4C\uC9C0. \uB0A0\uC774 \uC800\uBB3C\uC5B4\uBC84\uB9AC\uAE30
+    \uC804\uC5D0 \uC5B4\uC11C \uC62C\uB77C\uAC00\uC790."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -9323,7 +9323,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1742066491
 Transform:
   m_ObjectHideFlags: 0
@@ -9391,27 +9391,27 @@ PlayableDirector:
   - key: {fileID: -4544725924883384459, guid: 29a591063244f304784a09a1cc51079d, type: 2}
     value: {fileID: 1073123105}
   - key: {fileID: 8344172637165719592, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 1870326680}
+    value: {fileID: 201562745}
   - key: {fileID: -421160240448509171, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 186496216}
+    value: {fileID: 1321818093}
   - key: {fileID: -8202222624080988474, guid: 29a591063244f304784a09a1cc51079d, type: 2}
     value: {fileID: 1149990122}
   - key: {fileID: 8454488306832151722, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 2097185338}
+    value: {fileID: 1881766657}
   - key: {fileID: -446076470122674969, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 753187149}
+    value: {fileID: 1193697845}
   - key: {fileID: 322444300063847518, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 1019153079}
+    value: {fileID: 691926566}
   - key: {fileID: -8033985546342208965, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 1666449085}
+    value: {fileID: 1878669470}
   - key: {fileID: -8318336284391389462, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 806451075}
+    value: {fileID: 105042302}
   - key: {fileID: 1434406098203509248, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 1556077925}
+    value: {fileID: 387589452}
   - key: {fileID: -2113425715895329033, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 520109406}
+    value: {fileID: 68921425}
   - key: {fileID: 5603233005990433283, guid: 29a591063244f304784a09a1cc51079d, type: 2}
-    value: {fileID: 1321818093}
+    value: {fileID: 1485210973}
   - key: {fileID: -1554331674312652651, guid: 29a591063244f304784a09a1cc51079d, type: 2}
     value: {fileID: 2103113014}
   m_ExposedReferences:
@@ -11399,9 +11399,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uD558\uC9C0\uB9CC \uC774\uB807\uAC8C \uB3C4\uC6C0\uB9CC\uBC1B\uC744\uC218\uB3C4
-    \uC5C6\uC73C\uB2C8 \uB098\uB3C4 \uBB34\uC5B8\uAC00 \uB3C4\uC640\uC904 \uC218
-    \uC788\uC73C\uBA74 \uB3C4\uC640\uC904\uAC8C."
+  m_text: "\uC774 \uC704\uC5D0 \uD2B8\uB7A8\uD384\uB9B0\uC774 \uC788\uC5B4."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,
@@ -11555,7 +11553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\uADF8\uB098\uC800\uB098 \uC774\uB984\uC774 \uBB50\uC5D0\uC694?"
+  m_text: "\uC774 \uC55E\uC740 \uAE38\uC774 \uC5C6\uB294\uAC78\uC694..?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9ae525d83de454b983278ed77da415, type: 2}
   m_sharedMaterial: {fileID: 7364524807773276207, guid: ff9ae525d83de454b983278ed77da415,

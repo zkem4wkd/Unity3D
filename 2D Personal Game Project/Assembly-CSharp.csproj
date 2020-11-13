@@ -74,6 +74,7 @@
     <Compile Include="Assets\Script\Gimmick\ObjectScript\GetStoneScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\Lever.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\OutOfWorld.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\SpringJump.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\TeleportScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\TowerScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\TrampolineScript.cs" />

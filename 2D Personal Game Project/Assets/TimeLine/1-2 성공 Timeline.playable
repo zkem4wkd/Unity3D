@@ -312,6 +312,8 @@ AnimationClip:
       value: {fileID: 0}
     - time: 6.75
       value: {fileID: 0}
+    - time: 6.766667
+      value: {fileID: 0}
     attribute: m_Follow
     path: 
     classID: 114
@@ -333,12 +335,13 @@ AnimationClip:
     pptrCurveMapping:
     - {fileID: 0}
     - {fileID: 0}
+    - {fileID: 0}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 6.766667
+    m_StopTime: 6.783334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
