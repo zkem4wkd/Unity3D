@@ -10,6 +10,13 @@ public class FireTrap : MonoBehaviour
         {
             transform.GetChild(0).gameObject.SetActive(false);
             this.GetComponent<CapsuleCollider2D>().enabled = false;
+            Invoke("AgainFire", 20f);
         }
+    }
+
+    void AgainFire()
+    {
+        transform.GetChild(0).gameObject.SetActive(true);
+        GetComponent<CapsuleCollider2D>().enabled = true;
     }
 }
