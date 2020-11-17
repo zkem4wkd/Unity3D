@@ -5,7 +5,13 @@ using UnityEngine;
 public class WaterScript : WaterAttack
 {
     Vector3 mousePos;
-
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.CompareTag("Fire"))
+        {
+            collision.gameObject.SetActive(false);
+        }
+    }
     // Update is called once per frame
     protected override void Update()
     {

@@ -66,8 +66,14 @@
     <Compile Include="Assets\Script\GameManager\ButtonCoolTime.cs" />
     <Compile Include="Assets\Script\GameManager\ChangePlayer.cs" />
     <Compile Include="Assets\Script\GameManager\DragDrop.cs" />
+    <Compile Include="Assets\Script\GameManager\GameController.cs" />
     <Compile Include="Assets\Script\GameManager\Portal.cs" />
+    <Compile Include="Assets\Script\GameManager\SaveData.cs" />
+    <Compile Include="Assets\Script\GameManager\SaveSystem.cs" />
+    <Compile Include="Assets\Script\GameManager\TimeView.cs" />
+    <Compile Include="Assets\Script\GameManager\TimelineScript.cs" />
     <Compile Include="Assets\Script\GameManager\TimelineTrigger.cs" />
+    <Compile Include="Assets\Script\GameManager\Timer.cs" />
     <Compile Include="Assets\Script\GameManager\TowerCount.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\CandleScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\FireTrap.cs" />
@@ -85,6 +91,7 @@
     <Compile Include="Assets\Script\Gimmick\ObjectScript\WindStone.cs" />
     <Compile Include="Assets\Script\Gimmick\WeightScript.cs" />
     <Compile Include="Assets\Script\Gimmick\WeightStatus.cs" />
+    <Compile Include="Assets\Script\NPC\NpcStand.cs" />
     <Compile Include="Assets\Script\Player\Attack\FireAttack.cs" />
     <Compile Include="Assets\Script\Player\Attack\PlayerAttack.cs" />
     <Compile Include="Assets\Script\Player\Attack\RockAttack.cs" />

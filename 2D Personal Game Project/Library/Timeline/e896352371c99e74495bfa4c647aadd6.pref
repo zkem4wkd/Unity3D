@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeInFrames: 0
-  timeAreaShownRange: {x: -0.81524444, y: 45.898262}
+  timeAreaShownRange: {x: -0.83428687, y: 45.969208}
   showAudioWaveform: 1
   trackScale: 1
   playRangeEnabled: 0
   timeAreaPlayRange: {x: 3.4028235e+38, y: 3.4028235e+38}
-  windowTime: 15.333333333333334
-  verticalScroll: 0
+  windowTime: 17.433333333333334
+  verticalScroll: 124
   showMarkerHeader: 0
   m_Keys:
   - {fileID: 330606124286112374, guid: e896352371c99e74495bfa4c647aadd6, type: 2}
@@ -35,6 +35,7 @@ MonoBehaviour:
   - {fileID: -299082285315971495, guid: e896352371c99e74495bfa4c647aadd6, type: 2}
   - {fileID: 2110070822413524180, guid: e896352371c99e74495bfa4c647aadd6, type: 2}
   - {fileID: 4089037945520092832, guid: e896352371c99e74495bfa4c647aadd6, type: 2}
+  - {fileID: 3198553104418953111, guid: e896352371c99e74495bfa4c647aadd6, type: 2}
   m_Vals:
   - collapsed: 0
     showMarkers: 1
@@ -177,6 +178,41 @@ MonoBehaviour:
     m_MarkerTimeStampsKeys: 
     m_MarkerTimeStampsValues: 
   - collapsed: 1
+    showMarkers: 1
+    showInlineCurves: 0
+    inlineAnimationCurveHeight: 100
+    lastInlineCurveDataID: -1
+    inlineCurvesState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 0}
+      m_SearchString: 
+    inlineCurvesShownAreaInsideMargins:
+      serializedVersion: 2
+      x: 1
+      y: 1
+      width: 1
+      height: 1
+    m_MarkerTimeStampsKeys: 
+    m_MarkerTimeStampsValues: 
+  - collapsed: 0
     showMarkers: 1
     showInlineCurves: 0
     inlineAnimationCurveHeight: 100

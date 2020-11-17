@@ -24,6 +24,10 @@ public class FireBall : MonoBehaviour
             Fire();
             Destroy(this.gameObject);
         }
+        if(collision.gameObject.CompareTag("Water"))
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     void Fire()

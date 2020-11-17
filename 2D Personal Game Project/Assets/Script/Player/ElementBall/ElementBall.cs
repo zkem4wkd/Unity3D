@@ -23,6 +23,13 @@ public class ElementBall : MonoBehaviour
     RaycastHit2D rHit;
     bool clickOn = false;
 
+    private void OnEnable()
+    {
+        coolDown.gameObject.SetActive(false);
+        coolTime = 0f;
+        btnImg.fillAmount = 1;
+        btn.enabled = true;
+    }
     public void ElementOn()
     {
         clickOn = true;
