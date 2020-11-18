@@ -13,6 +13,7 @@ TagManager:
   - Tower
   - Slate
   - NPC
+  - TimeSystem
   layers:
   - Default
   - TransparentFX

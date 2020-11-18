@@ -6,7 +6,6 @@ using UnityEngine;
 public class SaveData
 {
     public int worldTime;
-    public float[] pos;
 
     public SaveData(int _time)
     {

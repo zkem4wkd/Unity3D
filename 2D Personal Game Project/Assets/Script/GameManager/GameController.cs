@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class GameController : MonoBehaviour
 {
@@ -8,14 +9,17 @@ public class GameController : MonoBehaviour
     string filePath = string.Empty;
     int maxWorldTime = 24;
     public int worldTime;
-    // Start is called before the first frame update
+    public bool Am = true;
+    public Sprite afternoonSky;
+    public Sprite eveningSky;
+    public Sprite nightSky;
+    public Light2D freedom;
+    public GameObject[] npc;
     private void Awake()
     {
-        worldTime = 6;
-    }
-    void Start()
-    {
         filePath = Application.dataPath + "/Uk.bin";
+        Save();
+        Load();
     }
     public void Save()
     {
@@ -33,6 +37,31 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(worldTime > 6 && worldTime <= 17)
+        {
+            Am = true;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = afternoonSky;
+            transform.GetChild(1).GetComponent<Light2D>().intensity = 1;
+            for (int i = 0; i < npc.Length; i++)
+            {
+                npc[i].gameObject.SetActive(true);
+            }
+        }
+        else if(worldTime > 17 && worldTime < 20)
+        {
+            Am = true;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = eveningSky;
+            transform.GetChild(1).GetComponent<Light2D>().intensity = 0.7f;
+        }
+        else if (worldTime >= 20 || worldTime <= 6)
+        {
+            Am = false;
+            transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = nightSky;
+            transform.GetChild(1).GetComponent<Light2D>().intensity = 0.5f;
+            for(int i = 0; i < npc.Length; i ++)
+            {
+                npc[i].gameObject.SetActive(false);
+            }
+        }
     }
 }

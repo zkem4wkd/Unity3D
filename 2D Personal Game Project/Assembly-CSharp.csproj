@@ -68,13 +68,17 @@
     <Compile Include="Assets\Script\GameManager\DragDrop.cs" />
     <Compile Include="Assets\Script\GameManager\GameController.cs" />
     <Compile Include="Assets\Script\GameManager\Portal.cs" />
+    <Compile Include="Assets\Script\GameManager\RestButton.cs" />
+    <Compile Include="Assets\Script\GameManager\RestChangeTime.cs" />
     <Compile Include="Assets\Script\GameManager\SaveData.cs" />
     <Compile Include="Assets\Script\GameManager\SaveSystem.cs" />
+    <Compile Include="Assets\Script\GameManager\StageSelect.cs" />
     <Compile Include="Assets\Script\GameManager\TimeView.cs" />
     <Compile Include="Assets\Script\GameManager\TimelineScript.cs" />
     <Compile Include="Assets\Script\GameManager\TimelineTrigger.cs" />
     <Compile Include="Assets\Script\GameManager\Timer.cs" />
     <Compile Include="Assets\Script\GameManager\TowerCount.cs" />
+    <Compile Include="Assets\Script\Gimmick\ObjectScript\BillageLamp.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\CandleScript.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\FireTrap.cs" />
     <Compile Include="Assets\Script\Gimmick\ObjectScript\GetStoneScript.cs" />

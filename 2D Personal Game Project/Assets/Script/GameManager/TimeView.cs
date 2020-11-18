@@ -12,6 +12,10 @@ public class TimeView : MonoBehaviour
     {
         gC = GameObject.Find("GameController").GetComponent<GameController>();
         text = GetComponent<TextMeshProUGUI>();
+    }
+    private void Update()
+    {
         text.text = (gC.worldTime).ToString();
     }
+
 }
